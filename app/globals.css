@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&family=Bree+Serif&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -5,6 +7,10 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  --brandPurple: #8000ff;
+  --darkPurple: #5900b3;
+  --brandOrange: #ff9100;
+  --brandBlack: #181c14;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -17,11 +23,21 @@
 body {
   color: var(--foreground);
   background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+
+  font-family: 'League Spartan', sans-serif;
+}
+.btn {
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.4);
 }
 
 @layer utilities {
   .text-balance {
     text-wrap: balance;
   }
+}
+.flex_between {
+  @apply flex justify-between items-center;
+}
+.app {
+  @apply w-[79rem];
 }
