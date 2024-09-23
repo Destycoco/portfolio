@@ -7,10 +7,12 @@ import P from '../fonts/paragraph';
 const Projects = () => {
   return (
     <div className="md:w-[80%] w-[90%] m-auto pb-12">
-      <H3 className="font-brandFont text-center mt-2">Projects</H3>
+      <H3 className="font-brandFont text-center mt-2 mb-8 w-fit pb-1 line m-auto relative">
+        Projects
+      </H3>
       <div className="flex w-full flex-wrap gap-12 mt-10 mb-16 justify-center">
         {/*** Project 1 */}
-        <div className="md:basis-[45%] pb-4 rounded-lg shadow">
+        <div className="md:basis-[45%] pb-4 rounded-lg shadow bg-white">
           <Image
             width={100}
             height={100}
@@ -43,7 +45,7 @@ const Projects = () => {
           </div>
         </div>
         {/*********** End of Project 1 */}
-        <div className="md:basis-[45%] pb-4 rounded-lg shadow">
+        <div className="md:basis-[45%] pb-4 rounded-lg shadow bg-white">
           <Image
             width={100}
             height={100}
@@ -76,7 +78,7 @@ const Projects = () => {
           </div>
         </div>
         {/***********End of Project 2 */}
-        <div className="md:basis-[45%] pb-4 rounded-lg shadow">
+        <div className="md:basis-[45%] pb-4 rounded-lg shadow bg-white">
           <Image
             width={100}
             height={100}
@@ -109,7 +111,7 @@ const Projects = () => {
           </div>
         </div>
         {/*************End of Project 3 */}
-        <div className="md:basis-[45%] pb-4 rounded-lg shadow">
+        <div className="md:basis-[45%] pb-4 rounded-lg shadow bg-white">
           <Image
             width={100}
             height={100}

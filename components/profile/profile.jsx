@@ -89,10 +89,12 @@ const Profile = () => {
   };
   return (
     <div className="py-8 pb-12 md:w-[80%] w-[90%] m-auto">
-      <H3 className="font-brandFont text-center mb-8">Profile</H3>
+      <H3 className="font-brandFont text-center mb-8 w-fit pb-1 line m-auto relative ">
+        Profile
+      </H3>
       <div className="md:flex flex max-md:flex-col mt-16 gap-8 mb-16 ">
         {/***Left hand card */}
-        <div className="basis-[48%] py-6 shadow">
+        <div className="basis-[48%] py-6 shadow bg-white">
           <H2 className="font-brandFont m-auto md:w-[80%] w-[90%] mb-4">
             Why hire me?
           </H2>
@@ -112,7 +114,7 @@ const Profile = () => {
           </div>
         </div>
         {/***Right hand card */}
-        <div className="basis-[48%] py-6 shadow">
+        <div className="basis-[48%] py-6 shadow bg-white">
           <H2 className="md:w-[80%] w-[90%] m-auto mb-4 font-brandFont">
             My {header}
           </H2>

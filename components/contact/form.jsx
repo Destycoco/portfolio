@@ -57,7 +57,7 @@ const Formsection = () => {
                   className="text-sm text-red-600"
                 />
               </div>
-              <div className="md:w-[48%] w-full h-[3rem]">
+              <div className="md:w-[48%] w-full ">
                 <label htmlFor="lastName" className="font-brandFont">
                   Last Name
                 </label>

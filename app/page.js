@@ -5,7 +5,7 @@ import Profile from '@/components/profile/profile';
 import Projects from '@/components/projects/projects';
 const Home = () => {
   return (
-    <div>
+    <div className="">
       <Feed />
       <Profile />
       <Projects />

@@ -5,13 +5,13 @@ import Button from '../accessories/button';
 
 const Feed = () => {
   return (
-    <div className="w-full pt-8 pb-2">
+    <div className="w-full pt-8 pb-2 mt-[5.4rem]">
       <div className="md:flex justify-center items-center gap-5 md:w-[80%] w-[90%]  m-auto">
         <div className="relative basis-[48%]">
-          <H4 className="text-brandBlack font-brandFont tracking-wider">
+          <H4 className="text-brandBlack orange_gradient font-brandFont tracking-wider">
             Hi, I'm Destiny <span className="text-brandOrange">Eze</span>
           </H4>
-          <H4 className="text-brandBlack font-brandFont tracking-wider">
+          <H4 className="text-brandBlack font-brandFont tracking-wider orange_reverse">
             Welcome To My Portfolio
           </H4>
           <P className="my-6">

@@ -4,7 +4,9 @@ import Image from 'next/image';
 const Contact = () => {
   return (
     <div className="md:w-[80%] w-[90%] m-auto">
-      <H3 className="text-center font-brandFont mt-2 mb-4">Contact Me</H3>
+      <H3 className="text-center font-brandFont mt-2 mb-8 w-fit pb-1 line m-auto relative">
+        Contact Me
+      </H3>
       <div className="bg-[#e6d0fd] md:px-12 px-4 py-4 rounded-lg mt-12">
         <H2 className="font-brandFont mb-3 ">Get In Touch</H2>
         <div className="flex mb-8">
