@@ -5,11 +5,11 @@ import Button from '../accessories/button';
 
 const Feed = () => {
   return (
-    <div className="w-full pt-8 pb-8">
-      <div className="flex justify-center items-center gap-5 w-[80%]  m-auto ">
+    <div className="w-full pt-8 pb-2">
+      <div className="md:flex justify-center items-center gap-5 md:w-[80%] w-[90%]  m-auto">
         <div className="relative basis-[48%]">
           <H4 className="text-brandBlack font-brandFont tracking-wider">
-            Looking For <span className="text-brandOrange">Me</span>??
+            Hi, I'm Destiny <span className="text-brandOrange">Eze</span>
           </H4>
           <H4 className="text-brandBlack font-brandFont tracking-wider">
             Welcome To My Portfolio
@@ -27,22 +27,8 @@ const Feed = () => {
             <Button className="w-fit bg-brandOrange">View Profile</Button>
             <Button className="w-fit bg-darkPurple">Hire Me</Button>
           </div>
-          {/* <div className="bg-brandPurple w-5 h-5 absolute rotate-45 top-6 -z-10 opacity-[0.6]"></div>
-          <div className="bg-brandPurple w-5 h-5 absolute top-[50%] rotate-45 -z-10 transform -translate-x-20 opacity-[0.6]"></div>
-          <div className="bg-brandOrange w-5 h-5 absolute rotate-45 -z-10 transform top-[7.5rem] translate-x-20 opacity-[0.6]"></div>
-          <div className="bg-brandOrange w-5 h-5 absolute rotate-45 -z-10 transform top-[13rem] opacity-[0.6]"></div>
-          <div className="bg-brandOrange w-5 h-5 absolute rotate-45 -z-10 transform top[60%] -translate-x-20 opacity-[0.6]"></div>
-          <div className="bg-brandOrange w-5 h-5 absolute rotate-45 -z-10 transform top-6 -translate-x-20 opacity-[0.6]"></div>
-          <div className="bg-brandPurple w-5 h-5 absolute rotate-45 -z-10 transform top-6 right-0 translate-x-5 opacity-[0.6]"></div>
-          <div className="bg-brandOrange w-5 h-5 absolute rotate-45 -z-10 transform top-[50%] right-0 translate-x-2 opacity-[0.6]"></div>
-          <div className="bg-brandPurple w-5 h-5 absolute rotate-45 -z-10 transform top[60%] right-0 translate-x-5 opacity-[0.6]"></div>
-          <div className="bg-brandOrange w-5 h-5 absolute rotate-45 -z-10 transform top-[54%] right-0 -translate-x-[6rem] opacity-[0.6]"></div>
-          <div className="bg-brandOrange w-5 h-5 absolute rotate-45 -z-10 transform top-[30%] right-0 -translate-x-[3rem] opacity-[0.6]"></div>
-          <div className="bg-brandOrange w-5 h-5 absolute rotate-45 -z-10 transform bottom-[6%] right-0 -translate-x-[5rem] opacity-[0.6]"></div>
-          <div className="bg-brandPurple w-5 h-5 absolute rotate-45 -z-10 transform top-[0] right-[50%] translate-y-[5rem] opacity-[0.6]"></div>
-          <div className="bg-brandOrange w-5 h-5 absolute rotate-45 -z-10 transform top-[1.5rem] right-[20%] opacity-[0.6]"></div> */}
         </div>
-        <div className="relative basis-[48%] h-[400px] border border-red-800 flex justify-center items-center">
+        <div className="relative basis-[48%] h-[400px] flex justify-center items-center">
           {/* Outer Div (Border effect) */}
           <div className="w-[320px] h-[320px] bg-brandOrange rounded-full absolute transform translate-x-3"></div>
 
@@ -58,6 +44,7 @@ const Feed = () => {
           </div>
         </div>
       </div>
+      <hr className="w-[80%] m-auto mt-6 h-[1px] bg-brandPurple" />
     </div>
   );
 };

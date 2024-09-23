@@ -29,6 +29,16 @@ body {
 .btn {
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.4);
 }
+.shadow {
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.4);
+}
+.purple-gradient {
+  background: radial-gradient(
+    100% 100% at 100% 0,
+    #efe0fd 0,
+    var(--brandPurple) 100%
+  );
+}
 
 @layer utilities {
   .text-balance {
@@ -39,5 +49,5 @@ body {
   @apply flex justify-between items-center;
 }
 .app {
-  @apply w-[79rem];
+  @apply max-w-[79rem];
 }

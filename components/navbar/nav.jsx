@@ -8,9 +8,10 @@ import { H2 } from '../fonts/headers';
 import { H1 } from '../fonts/headers';
 import MediaBox from '../accessories/mediabox';
 import Button from '../accessories/button';
+import { MdOutlineMenu } from 'react-icons/md';
 const NavBar = () => {
   return (
-    <div className="px-[5rem] py-3 border w-full">
+    <div className="md:px-[5rem] px-[1rem] py-3 border w-full">
       <div className="flex_between ">
         <Image
           src={'/images/logo-light.png'}
@@ -18,7 +19,7 @@ const NavBar = () => {
           width={75}
           height={75}
         />
-        <div className="flex gap-5 ">
+        <div className="flex gap-5 max-md:hidden">
           <Link href={''}>
             <H2 className=" text-darkPurple font-brandFont">Projects</H2>
           </Link>
@@ -29,7 +30,7 @@ const NavBar = () => {
             <H2 className=" text-darkPurple font-brandFont">Hire Me</H2>
           </Link>
         </div>
-        <div className="flex items-center gap-2">
+        <div className="flex items-center gap-2 max-md:hidden">
           <div className="flex items-center gap-2">
             <MediaBox>
               <Link href={'https://www.linkedin.com/in/destiny2000/'}>
@@ -48,6 +49,10 @@ const NavBar = () => {
             </MediaBox>
           </div>
           <Button className="bg-brandOrange">Download Resume</Button>
+        </div>
+        {/*Mobeile Nav*/}
+        <div className="md:hidden">
+          <MdOutlineMenu />
         </div>
       </div>
     </div>

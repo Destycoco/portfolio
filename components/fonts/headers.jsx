@@ -1,6 +1,8 @@
 export const H1 = ({ children, className = '' }) => {
   return (
-    <div className={`text-base text-brandBlack ${className}`}>{children}</div>
+    <div className={`text-lg font-bold text-brandBlack ${className}`}>
+      {children}
+    </div>
   );
 };
 
