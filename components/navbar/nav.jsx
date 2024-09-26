@@ -31,7 +31,7 @@ const NavBar = () => {
   console.log(isScrolled);
   return (
     <div
-      className={`md:px-[5rem] px-[1rem] py-3 shadow-md w-full transform transition-[0.3s] ease-in top-0 fixed z-30 ${isScrolled ? 'nav_shadow' : 'bg-white'}`}
+      className={`md:px-[5rem] px-[1rem] py-3 shadow-md border-none w-full transform transition-[0.3s] ease-in top-0 fixed z-30 ${isScrolled ? 'nav_shadow' : 'bg-white'}`}
     >
       <div className="flex_between ">
         <Image
