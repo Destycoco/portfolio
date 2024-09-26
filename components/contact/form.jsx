@@ -43,13 +43,16 @@ const Formsection = () => {
           <Form className="py-4 ">
             <div className="flex flex-wrap gap-4 md:justify-center ">
               <div className="md:w-[48%] w-full">
-                <label htmlFor="firstname" className="font-brandFont">
+                <label
+                  htmlFor="firstname"
+                  className="font-brandFont max-sm:text-white text-brandBlack"
+                >
                   First Name
                 </label>
                 <Field
                   type="text"
                   name="firstName"
-                  className="w-full h-[2.8rem] rounded-lg focus:outline-none focus:ring-1 focus:ring-brandPurple px-3 text-brandBlack"
+                  className="w-full h-[2.8rem] rounded-lg focus:outline-none focus:ring-1 max-sm:focus:ring-brandOrange focus:ring-brandPurple px-3 text-brandBlack"
                 ></Field>
                 <ErrorMessage
                   name="firstName"
@@ -58,13 +61,16 @@ const Formsection = () => {
                 />
               </div>
               <div className="md:w-[48%] w-full ">
-                <label htmlFor="lastName" className="font-brandFont">
+                <label
+                  htmlFor="lastName"
+                  className="font-brandFont max-sm:text-white text-brandBlack"
+                >
                   Last Name
                 </label>
                 <Field
                   type="text"
                   name="lastName"
-                  className="w-full h-[2.8rem] rounded-lg focus:outline-none focus:ring-1 focus:ring-brandPurple px-3 text-brandBlack"
+                  className="w-full h-[2.8rem] rounded-lg focus:outline-none max-sm:focus:ring-brandOrange focus:ring-1 focus:ring-brandPurple px-3 text-brandBlack"
                 ></Field>
                 <ErrorMessage
                   name="lastName"
@@ -73,13 +79,16 @@ const Formsection = () => {
                 />
               </div>
               <div className="md:w-[48%] w-full ">
-                <label htmlFor="email" className="font-brandFont">
+                <label
+                  htmlFor="email"
+                  className="font-brandFont max-sm:text-white text-brandBlack"
+                >
                   Email
                 </label>
                 <Field
                   type="text"
                   name="email"
-                  className="w-full h-[2.8rem] rounded-lg focus:outline-none focus:ring-1 focus:ring-brandPurple px-3 text-brandBlack"
+                  className="w-full h-[2.8rem] rounded-lg focus:outline-none focus:ring-1 max-sm:focus:ring-brandOrange focus:ring-brandPurple px-3 text-brandBlack"
                 ></Field>
                 <ErrorMessage
                   name="email"
@@ -88,13 +97,16 @@ const Formsection = () => {
                 />
               </div>
               <div className="md:w-[48%] w-full">
-                <label htmlFor="phone" className="font-brandFont">
+                <label
+                  htmlFor="phone"
+                  className="font-brandFont max-sm:text-white text-brandBlack"
+                >
                   Phone Number
                 </label>
                 <Field
                   type="text"
                   name="phone"
-                  className="w-full h-[2.8rem] rounded-lg focus:outline-none focus:ring-1 focus:ring-brandPurple px-3 text-brandBlack"
+                  className="w-full h-[2.8rem] rounded-lg focus:outline-none focus:ring-1 max-sm:focus:ring-brandOrange focus:ring-brandPurple px-3 text-brandBlack"
                 ></Field>
                 <ErrorMessage
                   name="phone"
@@ -104,7 +116,10 @@ const Formsection = () => {
               </div>
               <div className="w-full">
                 {' '}
-                <label htmlFor="body" className="font-brandFont">
+                <label
+                  htmlFor="body"
+                  className="font-brandFont max-sm:text-white text-brandBlack"
+                >
                   Type your message here
                 </label>
                 <textarea
@@ -112,7 +127,7 @@ const Formsection = () => {
                   onChange={handleChange}
                   onBlur={handleBlur}
                   value={values.body}
-                  className=" w-full h-[200px] py-2 px-3 rounded-lg focus:outline-none focus:ring-1 focus:ring-brandPurple text-brandBlack"
+                  className=" w-full h-[200px] py-2 px-3 rounded-lg focus:outline-none focus:ring-1 max-sm:focus:ring-brandOrange focus:ring-brandPurple text-brandBlack"
                 />
                 {errors.body && (
                   <div className="text-sm text-red-600 max-sm:text-brandOrange">

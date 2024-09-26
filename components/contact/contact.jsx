@@ -3,7 +3,7 @@ import Formsection from './form';
 import Image from 'next/image';
 const Contact = () => {
   return (
-    <div className="md:w-[80%] w-[90%] m-auto">
+    <div className="md:w-[80%] w-[90%] m-auto mb-12">
       <H3 className="text-center font-brandFont mt-2 mb-8 w-fit pb-1 line m-auto relative">
         Contact Me
       </H3>

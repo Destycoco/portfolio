@@ -23,7 +23,7 @@ const Projects = () => {
           />
           <div className="px-4 space-y-2">
             <Reveal>
-              <H1 className="font-brandFont mt-2">Demo Project</H1>
+              <H1 className="font-brandFont mt-2 mb-2">Demo Project</H1>
               <P>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
@@ -59,7 +59,7 @@ const Projects = () => {
           />
           <div className="px-4 space-y-2">
             <Reveal>
-              <H1 className="font-brandFont mt-2">Demo Project</H1>
+              <H1 className="font-brandFont mt-2 mb-2">Demo Project</H1>
               <P>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
@@ -94,7 +94,7 @@ const Projects = () => {
           />
           <div className="px-4 space-y-2">
             <Reveal>
-              <H1 className="font-brandFont mt-2">Demo Project</H1>
+              <H1 className="font-brandFont mt-2 mb-2">Demo Project</H1>
               <P>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
@@ -129,7 +129,7 @@ const Projects = () => {
           />
           <div className="px-4 space-y-2">
             <Reveal>
-              <H1 className="font-brandFont mt-2">Demo Project</H1>
+              <H1 className="font-brandFont mt-2 mb-2">Demo Project</H1>
               <P>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
