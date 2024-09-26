@@ -161,7 +161,7 @@ const Profile = () => {
                 </H1>
                 <H1>
                   LinkedIn:{' '}
-                  <span className="font-normal">
+                  <span className="font-normal max-sm:font-light">
                     <Link href={Contact.linkedIn} target="_blank">
                       {Contact.linkedIn}
                     </Link>
@@ -169,7 +169,7 @@ const Profile = () => {
                 </H1>
                 <H1>
                   Youtube:{' '}
-                  <span className="font-normal">
+                  <span className="font-normal max-sm:font-light">
                     <Link href={Contact.youtube} target="_blank">
                       {Contact.youtube}
                     </Link>

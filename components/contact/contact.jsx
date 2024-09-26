@@ -7,7 +7,7 @@ const Contact = () => {
       <H3 className="text-center font-brandFont mt-2 mb-8 w-fit pb-1 line m-auto relative">
         Contact Me
       </H3>
-      <div className="bg-[#e6d0fd] md:px-12 px-4 py-4 rounded-lg mt-12">
+      <div className=" bg-brandPurple md:bg-[#e6d0fd] md:px-12 px-4 py-4 rounded-lg mt-12">
         <H2 className="font-brandFont mb-3 ">Get In Touch</H2>
         <div className="flex mb-8">
           <Formsection />
