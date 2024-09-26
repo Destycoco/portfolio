@@ -91,7 +91,10 @@ const NavBar = () => {
         </div>
         {/*Mobeile Nav*/}
         <div className="md:hidden">
-          <MdOutlineMenu size={40} className="cursor-pointer" />
+          <MdOutlineMenu
+            size={40}
+            className="cursor-pointer text-brandPurple"
+          />
         </div>
       </div>
     </div>

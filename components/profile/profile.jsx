@@ -100,7 +100,7 @@ const Profile = () => {
       <div className="md:flex flex max-md:flex-col mt-16 gap-8 mb-16 ">
         {/***Left hand card */}
         <div className="basis-[48%] py-6 shadow bg-white">
-          <H2 className="font-brandFont m-auto md:w-[80%] w-[90%] mb-4">
+          <H2 className="font-brandFont m-auto md:w-[80%] w-[90%] mb-4 text-brandBlack">
             Why hire me?
           </H2>
           <div className="flex flex-col gap-3">
@@ -161,7 +161,7 @@ const Profile = () => {
                 </H1>
                 <H1>
                   LinkedIn:{' '}
-                  <span className="font-normal max-sm:text-base">
+                  <span className="font-normal max-sm:text-sm text-brandPurple hover:underline">
                     <Link href={Contact.linkedIn} target="_blank">
                       {Contact.linkedIn}
                     </Link>
@@ -169,7 +169,7 @@ const Profile = () => {
                 </H1>
                 <H1>
                   Youtube:{' '}
-                  <span className="font-normal max-sm:text-base">
+                  <span className="font-normal max-sm:text-sm text-brandPurple hover:underline">
                     <Link href={Contact.youtube} target="_blank">
                       {Contact.youtube}
                     </Link>
@@ -181,7 +181,7 @@ const Profile = () => {
           {header === 'Skills' && (
             <Reveal width="90%" mdWidth="80%">
               <div className="flex gap-2 flex-wrap md:w-[80%] w-[90%] m-auto mt-2">
-                <div>{skills}</div>
+                <div className="text-brandBlack">{skills}</div>
                 <MediaBox className="hover:bg-brandOrange">
                   <FaHtml5 className="text-3xl text-white" />
                 </MediaBox>

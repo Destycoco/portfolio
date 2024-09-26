@@ -49,12 +49,12 @@ const Formsection = () => {
                 <Field
                   type="text"
                   name="firstName"
-                  className="w-full h-[2.8rem] rounded-lg focus:outline-none focus:ring-1 focus:ring-brandPurple  px-3"
+                  className="w-full h-[2.8rem] rounded-lg focus:outline-none focus:ring-1 focus:ring-brandPurple px-3 text-brandBlack"
                 ></Field>
                 <ErrorMessage
                   name="firstName"
                   component="div"
-                  className="text-sm text-red-600"
+                  className="text-sm text-red-600 max-sm:text-brandOrange"
                 />
               </div>
               <div className="md:w-[48%] w-full ">
@@ -64,12 +64,12 @@ const Formsection = () => {
                 <Field
                   type="text"
                   name="lastName"
-                  className="w-full h-[2.8rem] rounded-lg focus:outline-none focus:ring-1 focus:ring-brandPurple  px-3"
+                  className="w-full h-[2.8rem] rounded-lg focus:outline-none focus:ring-1 focus:ring-brandPurple px-3 text-brandBlack"
                 ></Field>
                 <ErrorMessage
                   name="lastName"
                   component="div"
-                  className="text-sm text-red-600"
+                  className="text-sm text-red-600 max-sm:text-brandOrange"
                 />
               </div>
               <div className="md:w-[48%] w-full ">
@@ -79,12 +79,12 @@ const Formsection = () => {
                 <Field
                   type="text"
                   name="email"
-                  className="w-full h-[2.8rem] rounded-lg focus:outline-none focus:ring-1 focus:ring-brandPurple px-3"
+                  className="w-full h-[2.8rem] rounded-lg focus:outline-none focus:ring-1 focus:ring-brandPurple px-3 text-brandBlack"
                 ></Field>
                 <ErrorMessage
                   name="email"
                   component="div"
-                  className="text-sm text-red-600"
+                  className="text-sm text-red-600 max-sm:text-brandOrange"
                 />
               </div>
               <div className="md:w-[48%] w-full">
@@ -94,12 +94,12 @@ const Formsection = () => {
                 <Field
                   type="text"
                   name="phone"
-                  className="w-full h-[2.8rem] rounded-lg focus:outline-none focus:ring-1 focus:ring-brandPurple px-3"
+                  className="w-full h-[2.8rem] rounded-lg focus:outline-none focus:ring-1 focus:ring-brandPurple px-3 text-brandBlack"
                 ></Field>
                 <ErrorMessage
                   name="phone"
                   component="div"
-                  className="text-sm text-red-600"
+                  className="text-sm text-red-600 max-sm:text-brandOrange"
                 />
               </div>
               <div className="w-full">
@@ -112,17 +112,19 @@ const Formsection = () => {
                   onChange={handleChange}
                   onBlur={handleBlur}
                   value={values.body}
-                  className=" w-full h-[200px] py-2 px-3 rounded-lg focus:outline-none focus:ring-1 focus:ring-brandPurple"
+                  className=" w-full h-[200px] py-2 px-3 rounded-lg focus:outline-none focus:ring-1 focus:ring-brandPurple text-brandBlack"
                 />
                 {errors.body && (
-                  <div className="text-sm text-red-600">{errors.body}</div>
+                  <div className="text-sm text-red-600 max-sm:text-brandOrange">
+                    {errors.body}
+                  </div>
                 )}
               </div>
             </div>
             {/* disabled={isSubmitting} */}
             <button
               type="submit"
-              className="rounded-lg bg-brandPurple px-3 py-2 w-[120px] text-white mt-2"
+              className="rounded-lg bg-brandPurple max-sm:bg-brandOrange font-semibold px-3 py-2 w-[120px] text-white mt-2"
             >
               Submit
             </button>
