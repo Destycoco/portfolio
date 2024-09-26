@@ -18,7 +18,9 @@ export const H3 = ({ children, className = '' }) => {
 };
 export const H4 = ({ children, className = '' }) => {
   return (
-    <div className={`text-4xl text-brandBlack font-extrabold  ${className}`}>
+    <div
+      className={`text-4xl max-sm:text-3xl text-brandBlack font-extrabold  ${className}`}
+    >
       {children}
     </div>
   );

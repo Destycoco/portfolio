@@ -120,7 +120,7 @@ const Profile = () => {
         </div>
         {/***Right hand card */}
         <div className="basis-[48%] py-6 shadow bg-white">
-          <H2 className="md:w-[80%] w-[90%] m-auto mb-4 font-brandFont">
+          <H2 className="md:w-[80%] w-[90%] m-auto mb-4 font-brandFont text-brandBlack">
             My {header}
           </H2>
           {header === 'Education' && (
@@ -161,7 +161,7 @@ const Profile = () => {
                 </H1>
                 <H1>
                   LinkedIn:{' '}
-                  <span className="font-normal max-sm:font-light">
+                  <span className="font-normal max-sm:text-base">
                     <Link href={Contact.linkedIn} target="_blank">
                       {Contact.linkedIn}
                     </Link>
@@ -169,7 +169,7 @@ const Profile = () => {
                 </H1>
                 <H1>
                   Youtube:{' '}
-                  <span className="font-normal max-sm:font-light">
+                  <span className="font-normal max-sm:text-base">
                     <Link href={Contact.youtube} target="_blank">
                       {Contact.youtube}
                     </Link>

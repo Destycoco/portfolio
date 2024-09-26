@@ -121,3 +121,8 @@ body {
 .orange_reverse {
   @apply text-transparent bg-gradient-to-r from-brandOrange via-brandPurple to-brandOrange text-clip bg-clip-text;
 }
+@media screen and (max-width: 600px) {
+  .main:before {
+    background-color: #fff;
+  }
+}
