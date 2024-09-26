@@ -12,6 +12,7 @@ import Button from '../accessories/button';
 import { MdOutlineMenu } from 'react-icons/md';
 import '../../app/globals.css';
 import { useEffect, useState } from 'react';
+
 const NavBar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   useEffect(() => {
@@ -30,7 +31,7 @@ const NavBar = () => {
   console.log(isScrolled);
   return (
     <div
-      className={`md:px-[5rem] px-[1rem] py-3 border w-full top-0 fixed z-30 ${isScrolled ? 'nav_shadow' : 'bg-white'}`}
+      className={`md:px-[5rem] px-[1rem] py-3 ${isScrolled ? 'border-none' : 'border'} w-full transform transition-[0.3s] ease-in top-0 fixed z-30 ${isScrolled ? 'nav_shadow' : 'bg-white'}`}
     >
       <div className="flex_between ">
         <Image
@@ -41,17 +42,23 @@ const NavBar = () => {
         />
         <div className="flex gap-5 max-md:hidden">
           <Link href={''}>
-            <H2 className=" text-darkPurple font-brandFont w-fit pb-1 m-auto relative nav_style">
+            <H2
+              className={` ${isScrolled ? 'text-white' : 'text-darkPurple'} font-brandFont w-fit pb-1 m-auto relative nav_style`}
+            >
               Projects
             </H2>
           </Link>
           <Link href={''}>
-            <H2 className=" text-darkPurple font-brandFont w-fit pb-1 m-auto relative nav_style">
+            <H2
+              className={` ${isScrolled ? 'text-white' : 'text-darkPurple'} font-brandFont w-fit pb-1 m-auto relative nav_style`}
+            >
               About Me
             </H2>
           </Link>
           <Link href={''}>
-            <H2 className=" text-darkPurple font-brandFont w-fit pb-1 m-auto relative nav_style">
+            <H2
+              className={` ${isScrolled ? 'text-white' : 'text-darkPurple'} font-brandFont w-fit pb-1 m-auto relative nav_style`}
+            >
               Hire Me
             </H2>
           </Link>

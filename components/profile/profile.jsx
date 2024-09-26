@@ -14,6 +14,7 @@ import { H2, H3, H1 } from '../fonts/headers';
 import P from '../fonts/paragraph';
 import MediaBox from '../accessories/mediabox';
 import Link from 'next/link';
+import Reveal from '../anime/reveal';
 // import '../../globals.css';
 const Contact = {
   email: 'destibright1@gmail.com',
@@ -34,6 +35,21 @@ const Experience = [
     desc: 'I’ve also worked on several freelance projects, where I helped clients build responsive websites and web applications. Through these projects, I applied my skills in HTML, CSS, JavaScript, React, and Next.js to deliver tailored solutions, while using Git and GitHub to manage version control and project collaboration efficiently.',
   },
 ];
+const skills =
+  'I have solid experience working with core web technologies like HTML, CSS, and JavaScript, \
+    which I use to build responsive and dynamic websites. My expertise extends to modern front-end libraries and frameworks, \
+    including React and Next.js, where I focus on creating smooth, interactive user interfaces and optimizing performance. \
+    I’m also skilled in Tailwind CSS, allowing me to rapidly design and customize layouts with clean, maintainable code. Additionally, \
+    I’m proficient in version control using Git and GitHub, which I use for efficient collaboration and managing projects in a structured way.';
+const info =
+  'Hi, I’m Destiny Eze, a passionate front-end \
+    developer specializing in crafting modern, responsive, and user-friendly \
+    web applications. With strong skills in HTML, CSS, JavaScript, React, and Next.js, \
+    I enjoy building seamless digital experiences that prioritize accessibility and \
+    performance. I’ve worked on several freelance projects and recently completed a \
+    full-stack web app utilizing Next.js and MongoDB. When I’m not coding, you’ll find me learning \
+    about the latest trends in web development and reading tech blogs and articles. \
+    Feel free to check out my projects or get in touch for collaboration opportunities!';
 const intialData =
   'Hi, I’m Destiny Eze, a passionate front-end \
     developer specializing in crafting modern, responsive, and user-friendly \
@@ -43,25 +59,20 @@ const intialData =
     full-stack web app utilizing Next.js and MongoDB. When I’m not coding, you’ll find me learning \
     about the latest trends in web development and reading tech blogs and articles. \
     Feel free to check out my projects or get in touch for collaboration opportunities!';
+const education =
+  'I hold a Bachelor of Technology in Mechanical Engineering from River State University \
+    with a Second Class Upper Degree, which I completed in 2022. Alongside my engineering background\
+    , I’ve pursued my passion for web development by completing several certifications on Udemy and other online platforms, \
+    where I gained hands-on experience with modern web technologies and frameworks.';
 const dataArray = [
   {
     name: 'Bio',
-    info: 'Hi, I’m Destiny Eze, a passionate front-end \
-    developer specializing in crafting modern, responsive, and user-friendly \
-    web applications. With strong skills in HTML, CSS, JavaScript, React, and Next.js, \
-    I enjoy building seamless digital experiences that prioritize accessibility and \
-    performance. I’ve worked on several freelance projects and recently completed a \
-    full-stack web app utilizing Next.js and MongoDB. When I’m not coding, you’ll find me learning \
-    about the latest trends in web development and reading tech blogs and articles. \
-    Feel free to check out my projects or get in touch for collaboration opportunities!',
+    info: '',
     id: 1,
   },
   {
     name: 'Education',
-    info: 'I hold a Bachelor of Technology in Mechanical Engineering from River State University \
-    with a Second Class Upper Degree, which I completed in 2022. Alongside my engineering background\
-    , I’ve pursued my passion for web development by completing several certifications on Udemy and other online platforms, \
-    where I gained hands-on experience with modern web technologies and frameworks.',
+    info: '',
     id: 2,
   },
   {
@@ -71,20 +82,14 @@ const dataArray = [
   },
   {
     name: 'Skills',
-    info: 'I have solid experience working with core web technologies like HTML, CSS, and JavaScript, \
-    which I use to build responsive and dynamic websites. My expertise extends to modern front-end libraries and frameworks, \
-    including React and Next.js, where I focus on creating smooth, interactive user interfaces and optimizing performance. \
-    I’m also skilled in Tailwind CSS, allowing me to rapidly design and customize layouts with clean, maintainable code. Additionally, \
-    I’m proficient in version control using Git and GitHub, which I use for efficient collaboration and managing projects in a structured way.',
+    info: '',
     id: 4,
   },
   { name: 'Contact', info: '', id: 5 },
 ];
 const Profile = () => {
-  const [information, setInformation] = useState(intialData);
   const [header, setHeader] = useState('Bio');
   const handleChangeInfo = (value) => {
-    setInformation(value.info);
     setHeader(value.name);
   };
   return (
@@ -118,75 +123,91 @@ const Profile = () => {
           <H2 className="md:w-[80%] w-[90%] m-auto mb-4 font-brandFont">
             My {header}
           </H2>
-          <P className="md:w-[80%] w-[90%] m-auto">{information}</P>
+          {header === 'Education' && (
+            <Reveal width={'90%'} mdWidth={'80%'}>
+              <P className="md:w-[80%] w-[90%] m-auto">{education}</P>
+            </Reveal>
+          )}
+          {header === 'Bio' && (
+            <Reveal>
+              <P className="md:w-[80%] w-[90%] m-auto">{info}</P>
+            </Reveal>
+          )}
           {header === 'Experience' && (
             <div className="space-y-4 md:w-[80%] w-[90%] m-auto">
               {Experience.map((data) => (
-                <div>
-                  <H1>{data.position}</H1>
-                  <P>{data.year}</P>
-                  <P>{data.desc}</P>
-                </div>
+                <Reveal>
+                  <div>
+                    <H1>{data.position}</H1>
+                    <P>{data.year}</P>
+                    <P>{data.desc}</P>
+                  </div>
+                </Reveal>
               ))}
             </div>
           )}
           {header === 'Contact' && (
-            <div className="md:w-[80%] w-[90%] m-auto">
-              <H1>
-                Email: <span className="font-normal">{Contact.email}</span>
-              </H1>
-              <H1>
-                Phone: <span className="font-normal">{Contact.number}</span>
-              </H1>
-              <H1>
-                Location:{' '}
-                <span className="font-normal">{Contact.location}</span>
-              </H1>
-              <H1>
-                LinkedIn:{' '}
-                <span className="font-normal">
-                  <Link href={Contact.linkedIn} target="_blank">
-                    {Contact.linkedIn}
-                  </Link>
-                </span>
-              </H1>
-              <H1>
-                Youtube:{' '}
-                <span className="font-normal">
-                  <Link href={Contact.youtube} target="_blank">
-                    {Contact.youtube}
-                  </Link>
-                </span>
-              </H1>
-            </div>
+            <Reveal width="90%" mdWidth="80%">
+              <div className="md:w-[80%] w-[90%] m-auto">
+                <H1>
+                  Email: <span className="font-normal">{Contact.email}</span>
+                </H1>
+                <H1>
+                  Phone: <span className="font-normal">{Contact.number}</span>
+                </H1>
+                <H1>
+                  Location:{' '}
+                  <span className="font-normal">{Contact.location}</span>
+                </H1>
+                <H1>
+                  LinkedIn:{' '}
+                  <span className="font-normal">
+                    <Link href={Contact.linkedIn} target="_blank">
+                      {Contact.linkedIn}
+                    </Link>
+                  </span>
+                </H1>
+                <H1>
+                  Youtube:{' '}
+                  <span className="font-normal">
+                    <Link href={Contact.youtube} target="_blank">
+                      {Contact.youtube}
+                    </Link>
+                  </span>
+                </H1>
+              </div>
+            </Reveal>
           )}
           {header === 'Skills' && (
-            <div className="flex gap-2 flex-wrap md:w-[80%] w-[90%] m-auto mt-2">
-              <MediaBox className="hover:bg-brandOrange">
-                <FaHtml5 className="text-3xl text-white" />
-              </MediaBox>
-              <MediaBox className="hover:bg-brandOrange">
-                <FaCss3 className="text-3xl text-white" />
-              </MediaBox>
-              <MediaBox className="hover:bg-brandOrange">
-                <IoLogoJavascript className="text-3xl text-white " />
-              </MediaBox>
-              <MediaBox className="hover:bg-brandOrange">
-                <FaReact className="text-3xl text-white " />
-              </MediaBox>
-              <MediaBox className="hover:bg-brandOrange">
-                <RiNextjsFill className="text-3xl text-white" />
-              </MediaBox>
-              <MediaBox className="hover:bg-brandOrange">
-                <SiTailwindcss className="text-3xl text-white" />
-              </MediaBox>
-              <MediaBox className="hover:bg-brandOrange">
-                <IoGitBranch className="text-3xl text-white" />
-              </MediaBox>
-              <MediaBox className="hover:bg-brandOrange">
-                <FaGithub className="text-3xl text-white" />
-              </MediaBox>
-            </div>
+            <Reveal width="90%" mdWidth="80%">
+              <div className="flex gap-2 flex-wrap md:w-[80%] w-[90%] m-auto mt-2">
+                <div>{skills}</div>
+                <MediaBox className="hover:bg-brandOrange">
+                  <FaHtml5 className="text-3xl text-white" />
+                </MediaBox>
+                <MediaBox className="hover:bg-brandOrange">
+                  <FaCss3 className="text-3xl text-white" />
+                </MediaBox>
+                <MediaBox className="hover:bg-brandOrange">
+                  <IoLogoJavascript className="text-3xl text-white " />
+                </MediaBox>
+                <MediaBox className="hover:bg-brandOrange">
+                  <FaReact className="text-3xl text-white " />
+                </MediaBox>
+                <MediaBox className="hover:bg-brandOrange">
+                  <RiNextjsFill className="text-3xl text-white" />
+                </MediaBox>
+                <MediaBox className="hover:bg-brandOrange">
+                  <SiTailwindcss className="text-3xl text-white" />
+                </MediaBox>
+                <MediaBox className="hover:bg-brandOrange">
+                  <IoGitBranch className="text-3xl text-white" />
+                </MediaBox>
+                <MediaBox className="hover:bg-brandOrange">
+                  <FaGithub className="text-3xl text-white" />
+                </MediaBox>
+              </div>
+            </Reveal>
           )}
         </div>
       </div>

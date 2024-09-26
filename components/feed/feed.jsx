@@ -2,6 +2,7 @@ import Image from 'next/image';
 import { H4 } from '../fonts/headers';
 import P from '../fonts/paragraph';
 import Button from '../accessories/button';
+import Reveal from '../anime/reveal';
 
 const Feed = () => {
   return (
@@ -14,15 +15,18 @@ const Feed = () => {
           <H4 className="text-brandBlack font-brandFont tracking-wider orange_reverse">
             Welcome To My Portfolio
           </H4>
-          <P className="my-6">
-            Hi, I’m Destiny Eze, a front-end developer with a passion for
-            crafting clean, responsive websites and web applications. My
-            expertise includes HTML, CSS, JavaScript, React, and Next.js, and I
-            love bringing designs to life with intuitive, user-friendly
-            interfaces. I focus on creating efficient, seamless experiences
-            while keeping accessibility and modern web practices in mind. It's
-            my greatest pleasure to be at your service.
-          </P>
+          <Reveal>
+            <P className="my-6">
+              Hi, I’m Destiny Eze, a front-end developer with a passion for
+              crafting clean, responsive websites and web applications. My
+              expertise includes HTML, CSS, JavaScript, React, and Next.js, and
+              I love bringing designs to life with intuitive, user-friendly
+              interfaces. I focus on creating efficient, seamless experiences
+              while keeping accessibility and modern web practices in mind. It's
+              my greatest pleasure to be at your service.
+            </P>
+          </Reveal>
+
           <div className="flex gap-3">
             <Button className="w-fit bg-brandOrange">View Profile</Button>
             <Button className="w-fit bg-darkPurple">Hire Me</Button>

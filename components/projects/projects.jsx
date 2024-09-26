@@ -4,6 +4,7 @@ import Link from 'next/link';
 import { IoEyeSharp } from 'react-icons/io5';
 import { FiGithub } from 'react-icons/fi';
 import P from '../fonts/paragraph';
+import Reveal from '../anime/reveal';
 const Projects = () => {
   return (
     <div className="md:w-[80%] w-[90%] m-auto pb-12">
@@ -21,13 +22,16 @@ const Projects = () => {
             className="w-full overflow-hidden rounded-tl-lg rounded-tr-lg object-fill"
           />
           <div className="px-4 space-y-2">
-            <H1 className="font-brandFont mt-2">Demo Project</H1>
-            <P>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat.
-            </P>
+            <Reveal>
+              <H1 className="font-brandFont mt-2">Demo Project</H1>
+              <P>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat.
+              </P>
+            </Reveal>
+
             <div className="flex gap-2 items-center justify-end ">
               <Link
                 href={''}
@@ -54,13 +58,15 @@ const Projects = () => {
             className="w-full overflow-hidden rounded-tl-lg rounded-tr-lg object-fill"
           />
           <div className="px-4 space-y-2">
-            <H1 className="font-brandFont mt-2">Demo Project 2</H1>
-            <P>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat.
-            </P>
+            <Reveal>
+              <H1 className="font-brandFont mt-2">Demo Project</H1>
+              <P>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat.
+              </P>
+            </Reveal>
             <div className="flex gap-2 items-center justify-end ">
               <Link
                 href={''}
@@ -87,13 +93,15 @@ const Projects = () => {
             className="w-full overflow-hidden rounded-tl-lg rounded-tr-lg object-fill"
           />
           <div className="px-4 space-y-2">
-            <H1 className="font-brandFont mt-2">Demo Project 3</H1>
-            <P>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat.
-            </P>
+            <Reveal>
+              <H1 className="font-brandFont mt-2">Demo Project</H1>
+              <P>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat.
+              </P>
+            </Reveal>
             <div className="flex gap-2 items-center justify-end ">
               <Link
                 href={''}
@@ -120,13 +128,15 @@ const Projects = () => {
             className="w-full overflow-hidden rounded-tl-lg rounded-tr-lg object-fill"
           />
           <div className="px-4 space-y-2">
-            <H1 className="font-brandFont mt-2">Demo Project 4</H1>
-            <P>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat.
-            </P>
+            <Reveal>
+              <H1 className="font-brandFont mt-2">Demo Project</H1>
+              <P>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat.
+              </P>
+            </Reveal>
             <div className="flex gap-2 items-center justify-end ">
               <Link
                 href={''}
