@@ -52,7 +52,7 @@ const Formsection = () => {
                 <Field
                   type="text"
                   name="firstName"
-                  className="w-full h-[2.8rem] rounded-lg focus:outline-none focus:ring-1 max-sm:focus:ring-brandOrange focus:ring-brandPurple px-3 text-brandBlack"
+                  className="w-full h-[2.8rem] rounded-lg focus:outline-none focus:ring-1 max-sm:focus:ring-2 max-sm:focus:ring-brandOrange focus:ring-brandPurple px-3 text-brandBlack"
                 ></Field>
                 <ErrorMessage
                   name="firstName"
@@ -70,7 +70,7 @@ const Formsection = () => {
                 <Field
                   type="text"
                   name="lastName"
-                  className="w-full h-[2.8rem] rounded-lg focus:outline-none max-sm:focus:ring-brandOrange focus:ring-1 focus:ring-brandPurple px-3 text-brandBlack"
+                  className="w-full h-[2.8rem] rounded-lg focus:outline-none max-sm:focus:ring-brandOrange focus:ring-1 max-sm:focus:ring-2 focus:ring-brandPurple px-3 text-brandBlack"
                 ></Field>
                 <ErrorMessage
                   name="lastName"
@@ -88,7 +88,7 @@ const Formsection = () => {
                 <Field
                   type="text"
                   name="email"
-                  className="w-full h-[2.8rem] rounded-lg focus:outline-none focus:ring-1 max-sm:focus:ring-brandOrange focus:ring-brandPurple px-3 text-brandBlack"
+                  className="w-full h-[2.8rem] rounded-lg focus:outline-none focus:ring-1 max-sm:focus:ring-2 max-sm:focus:ring-brandOrange focus:ring-brandPurple px-3 text-brandBlack"
                 ></Field>
                 <ErrorMessage
                   name="email"
@@ -106,7 +106,7 @@ const Formsection = () => {
                 <Field
                   type="text"
                   name="phone"
-                  className="w-full h-[2.8rem] rounded-lg focus:outline-none focus:ring-1 max-sm:focus:ring-brandOrange focus:ring-brandPurple px-3 text-brandBlack"
+                  className="w-full h-[2.8rem] rounded-lg focus:outline-none focus:ring-1 max-sm:focus:ring-2 max-sm:focus:ring-brandOrange focus:ring-brandPurple px-3 text-brandBlack"
                 ></Field>
                 <ErrorMessage
                   name="phone"
@@ -127,7 +127,7 @@ const Formsection = () => {
                   onChange={handleChange}
                   onBlur={handleBlur}
                   value={values.body}
-                  className=" w-full h-[200px] py-2 px-3 rounded-lg focus:outline-none focus:ring-1 max-sm:focus:ring-brandOrange focus:ring-brandPurple text-brandBlack"
+                  className=" w-full h-[200px] py-2 px-3 rounded-lg focus:outline-none focus:ring-1 max-sm:focus:ring-2 max-sm:focus:ring-brandOrange focus:ring-brandPurple text-brandBlack"
                 />
                 {errors.body && (
                   <div className="text-sm text-red-600 max-sm:text-brandOrange">

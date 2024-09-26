@@ -17,8 +17,8 @@ const Feed = () => {
           </H4>
           <Reveal>
             <P className="my-6">
-              Hi, I’m Destiny Eze, a front-end developer with a passion for
-              crafting clean, responsive websites and web applications. My
+              Hi, I’m Destiny Eze, a seasoned front-end developer with a passion
+              for crafting clean, responsive websites and web applications. My
               expertise includes HTML, CSS, JavaScript, React, and Next.js, and
               I love bringing designs to life with intuitive, user-friendly
               interfaces. I focus on creating efficient, seamless experiences
