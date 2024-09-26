@@ -35,7 +35,7 @@ const NavBar = () => {
     >
       <div className="flex_between ">
         <Image
-          src={isScrolled ? '/images/logo-dark.png' : '/images/logo-light.png'}
+          src={'/images/logo-light.png'}
           alt="logo"
           width={75}
           height={75}
@@ -43,21 +43,27 @@ const NavBar = () => {
         <div className="flex gap-5 max-md:hidden">
           <Link href={''}>
             <H2
-              className={` ${isScrolled ? 'text-white' : 'text-darkPurple'} font-brandFont w-fit pb-1 m-auto relative nav_style`}
+              className={
+                'text-darkPurple font-brandFont w-fit pb-1 m-auto relative nav_style'
+              }
             >
               Projects
             </H2>
           </Link>
           <Link href={''}>
             <H2
-              className={` ${isScrolled ? 'text-white' : 'text-darkPurple'} font-brandFont w-fit pb-1 m-auto relative nav_style`}
+              className={
+                'text-darkPurple font-brandFont w-fit pb-1 m-auto relative nav_style'
+              }
             >
               About Me
             </H2>
           </Link>
           <Link href={''}>
             <H2
-              className={` ${isScrolled ? 'text-white' : 'text-darkPurple'} font-brandFont w-fit pb-1 m-auto relative nav_style`}
+              className={
+                'text-darkPurple font-brandFont w-fit pb-1 m-auto relative nav_style'
+              }
             >
               Hire Me
             </H2>
