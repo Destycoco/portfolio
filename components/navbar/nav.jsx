@@ -35,7 +35,7 @@ const NavBar = () => {
     >
       <div className="flex_between ">
         <Image
-          src={'/images/logo-light.png'}
+          src={isScrolled ? '/images/logo-dark.png' : '/images/logo-light.png'}
           alt="logo"
           width={75}
           height={75}
