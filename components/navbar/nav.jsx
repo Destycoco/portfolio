@@ -34,14 +34,17 @@ const NavBar = () => {
       className={`md:px-[5rem] px-[1rem] py-3 shadow-md border-none w-full transform transition-[0.3s] ease-in top-0 fixed z-30 ${isScrolled ? 'nav_shadow' : 'bg-white'}`}
     >
       <div className="flex_between ">
-        <Image
-          src={'/images/logo-light.png'}
-          alt="logo"
-          width={75}
-          height={75}
-        />
+        <Link href={'/'}>
+          <Image
+            src={'/images/logo-light.png'}
+            alt="logo"
+            width={75}
+            height={75}
+          />
+        </Link>
+
         <div className="flex gap-5 max-md:hidden">
-          <Link href={''}>
+          <Link href={'#projects'}>
             <H2
               className={
                 'text-darkPurple font-brandFont w-fit pb-1 m-auto relative nav_style'
@@ -50,7 +53,7 @@ const NavBar = () => {
               Projects
             </H2>
           </Link>
-          <Link href={''}>
+          <Link href={'#profile'}>
             <H2
               className={
                 'text-darkPurple font-brandFont w-fit pb-1 m-auto relative nav_style'
@@ -59,7 +62,7 @@ const NavBar = () => {
               About Me
             </H2>
           </Link>
-          <Link href={''}>
+          <Link href={'#contact-me'}>
             <H2
               className={
                 'text-darkPurple font-brandFont w-fit pb-1 m-auto relative nav_style'

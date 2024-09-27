@@ -7,7 +7,7 @@ import P from '../fonts/paragraph';
 import Reveal from '../anime/reveal';
 const Projects = () => {
   return (
-    <div className="md:w-[80%] w-[90%] m-auto pb-12">
+    <div className="md:w-[80%] w-[90%] m-auto pb-12" id="projects">
       <H3 className="font-brandFont text-center mt-2 mb-8 w-fit pb-1 line m-auto relative">
         Projects
       </H3>
