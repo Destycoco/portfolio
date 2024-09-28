@@ -6,7 +6,6 @@ import { FaLinkedinIn } from 'react-icons/fa6';
 import { BsYoutube } from 'react-icons/bs';
 import { RiInstagramFill } from 'react-icons/ri';
 import { H2 } from '../fonts/headers';
-import { H1 } from '../fonts/headers';
 import MediaBox from '../accessories/mediabox';
 import Button from '../accessories/button';
 import { MdOutlineMenu } from 'react-icons/md';

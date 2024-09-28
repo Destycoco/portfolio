@@ -3,17 +3,21 @@ import { H4 } from '../fonts/headers';
 import P from '../fonts/paragraph';
 import Button from '../accessories/button';
 import Reveal from '../anime/reveal';
-
+import Typed from '../typing/typing';
 const Feed = () => {
   return (
     <div className="w-full pt-8 pb-2 mt-[5.4rem]">
       <div className="md:flex justify-center items-center gap-5 md:w-[80%] w-[90%]  m-auto">
         <div className="relative basis-[48%]">
           <H4 className="text-brandBlack orange_gradient font-brandFont tracking-wider">
-            Hi, I'm Destiny <span className="text-brandOrange">Eze</span>
+            <Typed text="Hi, I'm Destiny Eze" speed={100}></Typed>
           </H4>
           <H4 className="text-brandBlack font-brandFont tracking-wider orange_reverse">
-            Welcome To My Portfolio
+            <Typed
+              text={'Welcome To My Portfolio.'}
+              speed={100}
+              delay={2500}
+            ></Typed>
           </H4>
           <Reveal>
             <P className="my-6">

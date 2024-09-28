@@ -8,7 +8,9 @@ const Contact = () => {
         Contact Me
       </H3>
       <div className=" bg-brandPurple md:bg-[#e6d0fd] md:px-12 px-4 py-4 rounded-lg mt-12">
-        <H2 className="font-brandFont mb-3 ">Get In Touch</H2>
+        <H2 className="font-brandFont mb-3 text-brandBlack max-sm:text-white ">
+          Get In Touch
+        </H2>
         <div className="flex mb-8">
           <Formsection />
           <div className="w-[48%] relative flex justify-center items-center  max-md:hidden">
