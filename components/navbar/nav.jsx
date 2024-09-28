@@ -131,7 +131,7 @@ const NavBar = () => {
                   Hire me
                 </div>
               </a>
-              <div className="flex items-center gap-2 mt-[6px]">
+              <div className="flex items-center gap-2 mt-[6px] mb-2">
                 <MediaBox className={'py-1 px-2 hover:bg-brandOrange'}>
                   <Link href={'https://www.linkedin.com/in/destiny2000/'}>
                     <FaLinkedinIn className="text-white " />
