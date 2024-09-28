@@ -150,14 +150,22 @@ const Profile = () => {
             <Reveal width="90%" mdWidth="80%">
               <div className="md:w-[80%] w-[90%] m-auto">
                 <H1>
-                  Email: <span className="font-normal">{Contact.email}</span>
+                  Email:{' '}
+                  <span className="font-normal text-base max-sm:text-sm">
+                    {Contact.email}
+                  </span>
                 </H1>
                 <H1>
-                  Phone: <span className="font-normal">{Contact.number}</span>
+                  Phone:{' '}
+                  <span className="font-normal  text-base max-sm:text-sm">
+                    {Contact.number}
+                  </span>
                 </H1>
                 <H1>
                   Location:{' '}
-                  <span className="font-normal">{Contact.location}</span>
+                  <span className="font-normal  text-base max-sm:text-sm">
+                    {Contact.location}
+                  </span>
                 </H1>
                 <H1>
                   LinkedIn:{' '}
