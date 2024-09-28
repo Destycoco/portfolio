@@ -4,7 +4,10 @@ import P from '../fonts/paragraph';
 import Button from '../accessories/button';
 import Reveal from '../anime/reveal';
 import Typed from '../typing/typing';
+import { useRouter } from 'next/navigation';
+import Link from 'next/link';
 const Feed = () => {
+  const router = useRouter();
   return (
     <div className="w-full pt-8 pb-2 mt-[5.4rem]">
       <div className="md:flex justify-center items-center gap-5 md:w-[80%] w-[90%]  m-auto">
@@ -32,8 +35,17 @@ const Feed = () => {
           </Reveal>
 
           <div className="flex gap-3">
-            <Button className="w-fit bg-brandOrange">View Profile</Button>
-            <Button className="w-fit bg-darkPurple">Hire Me</Button>
+            <a href={'#profile'}>
+              <Button className="w-fit bg-brandOrange hover:transform hover:-translate-y-1 transition-all ease-in active:translate-y-1">
+                View Profile
+              </Button>
+            </a>
+            <a href="#contact-me">
+              <Button className="w-fit bg-darkPurple hover:transform hover:-translate-y-1 transition-all ease-in active:translate-y-1">
+                {' '}
+                Hire Me
+              </Button>
+            </a>
           </div>
         </div>
         <div className="relative basis-[48%] h-[400px] flex justify-center items-center">

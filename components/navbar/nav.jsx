@@ -14,6 +14,10 @@ import { useEffect, useState } from 'react';
 
 const NavBar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
+  const [isShowNav, setIsShowNav] = useState(false);
+  const toggleNav = () => {
+    setIsShowNav((prev) => !prev);
+  };
   useEffect(() => {
     const checkScroll = () => {
       const scrolled = window.scrollY > 0;
@@ -73,17 +77,17 @@ const NavBar = () => {
         </div>
         <div className="flex items-center gap-2 max-md:hidden">
           <div className="flex items-center gap-2">
-            <MediaBox>
+            <MediaBox className={'py-2 px-3'}>
               <Link href={'https://www.linkedin.com/in/destiny2000/'}>
                 <FaLinkedinIn className="text-white" />
               </Link>
             </MediaBox>
-            <MediaBox>
+            <MediaBox className={'py-2 px-3'}>
               <Link href={''}>
                 <BsYoutube className="text-white" />
               </Link>
             </MediaBox>
-            <MediaBox>
+            <MediaBox className={'py-2 px-3'}>
               <Link href={''}>
                 <RiInstagramFill className="text-white" />
               </Link>
@@ -92,11 +96,62 @@ const NavBar = () => {
           <Button className="bg-brandOrange">Download Resume</Button>
         </div>
         {/*Mobeile Nav*/}
-        <div className="md:hidden">
+        <div className="md:hidden relative text-right w-[50%] justify-end flex">
           <MdOutlineMenu
             size={40}
-            className="cursor-pointer text-brandPurple"
+            className="cursor-pointer text-brandPurple "
+            onClick={toggleNav}
           />
+          {isShowNav && (
+            <div className="absolute top-full mt-6 shadow text-left py-3 px-4 flex flex-col gap-2 rounded-br-md rounded-bl-md right-0 w-full min-w-[200px] bg-white">
+              <a
+                href={'#projects'}
+                className=" "
+                onClick={() => setIsShowNav(false)}
+              >
+                <div className="font-semibold text-xl text-brandBlack border border-brandPurple hover:text-white w-full py-1 px-2 rounded-sm  hover:bg-brandPurple bg-[#faf4ff]">
+                  Projects
+                </div>
+              </a>
+              <a
+                href={'#profile'}
+                className=" "
+                onClick={() => setIsShowNav(false)}
+              >
+                <div className="font-semibold text-xl text-brandBlack border border-brandPurple hover:text-white w-full py-1 px-2 rounded-sm hover:bg-brandPurple bg-[#faf4ff]">
+                  About me
+                </div>
+              </a>
+              <a
+                href={'#contact-me'}
+                className=" "
+                onClick={() => setIsShowNav(false)}
+              >
+                <div className="font-semibold text-xl text-brandBlack border border-brandPurple hover:text-white w-full py-1 px-2 rounded-sm hover:bg-brandPurple bg-[#faf4ff]">
+                  Hire me
+                </div>
+              </a>
+              <div className="flex items-center gap-2 mt-[6px]">
+                <MediaBox className={'py-1 px-2 hover:bg-brandOrange'}>
+                  <Link href={'https://www.linkedin.com/in/destiny2000/'}>
+                    <FaLinkedinIn className="text-white " />
+                  </Link>
+                </MediaBox>
+                <MediaBox className={'py-1 px-2 hover:bg-brandOrange'}>
+                  <Link href={''}>
+                    <BsYoutube className="text-white" />
+                  </Link>
+                </MediaBox>
+                <MediaBox className={'py-1 px-2 hover:bg-brandOrange'}>
+                  <Link href={''}>
+                    <RiInstagramFill className="text-white" />
+                  </Link>
+                </MediaBox>
+              </div>
+            </div>
+          )}
+
+          {/* </div> */}
         </div>
       </div>
     </div>
