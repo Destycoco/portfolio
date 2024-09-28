@@ -9,6 +9,7 @@ import { H2 } from '../fonts/headers';
 import MediaBox from '../accessories/mediabox';
 import Button from '../accessories/button';
 import { MdOutlineMenu } from 'react-icons/md';
+import { MdOutlineClose } from 'react-icons/md';
 import '../../app/globals.css';
 import { useEffect, useState } from 'react';
 
@@ -95,63 +96,82 @@ const NavBar = () => {
           </div>
           <Button className="bg-brandOrange">Download Resume</Button>
         </div>
-        {/*Mobeile Nav*/}
+        {/*Mobile Nav*/}
         <div className="md:hidden relative text-right w-[50%] justify-end flex">
-          <MdOutlineMenu
-            size={40}
-            className="cursor-pointer text-brandPurple "
-            onClick={toggleNav}
-          />
+          {/* Menu Icon Wrapper */}
+          <div className="relative flex justify-center items-center w-[50px] h-[50px] ">
+            {/* MdOutlineMenu */}
+            <MdOutlineMenu
+              size={40}
+              className={`cursor-pointer absolute text-brandPurple transition-all duration-500 ease-in-out ${
+                isShowNav
+                  ? 'opacity-0 transform rotate-90 scale-0'
+                  : 'opacity-100 transform rotate-0 scale-100'
+              }`}
+              onClick={toggleNav}
+            />
+
+            {/* MdOutlineClose */}
+            <MdOutlineClose
+              size={40}
+              className={`cursor-pointer absolute text-brandPurple transition-all duration-500 ease-in-out ${
+                isShowNav
+                  ? 'opacity-100 transform rotate-0 scale-100'
+                  : 'opacity-0 transform rotate-90 scale-0'
+              }`}
+              onClick={toggleNav}
+            />
+          </div>
+
+          {/* Dropdown Menu */}
           {isShowNav && (
-            <div className="absolute top-full mt-6 shadow text-left py-3 px-4 flex flex-col gap-3 rounded-br-md rounded-bl-md right-0 w-full min-w-[240px] bg-white">
+            <div className="absolute top-full mt-6 shadow text-left pt-6 py-3 px-4 flex flex-col gap-3 rounded-br-md rounded-bl-md right-0 w-full min-w-[250px] bg-white">
               <a
-                href={'#projects'}
+                href="#projects"
                 className=" "
                 onClick={() => setIsShowNav(false)}
               >
-                <div className="font-semibold text-xl text-brandBlack border border-brandPurple hover:text-white w-full py-1 px-2 rounded-sm  hover:bg-brandPurple bg-[#faf4ff]">
+                <div className="font-semibold text-xl text-brandBlack border border-brandPurple hover:text-white w-full py-1 px-2 rounded-sm hover:bg-brandPurple bg-[#faf4ff] transition-all duration-100 ease-out">
                   Projects
                 </div>
               </a>
               <a
-                href={'#profile'}
+                href="#profile"
                 className=" "
                 onClick={() => setIsShowNav(false)}
               >
-                <div className="font-semibold text-xl text-brandBlack border border-brandPurple hover:text-white w-full py-1 px-2 rounded-sm hover:bg-brandPurple bg-[#faf4ff]">
-                  About me
+                <div className="font-semibold text-xl text-brandBlack border border-brandPurple hover:text-white w-full py-1 px-2 rounded-sm hover:bg-brandPurple bg-[#faf4ff] transition-all duration-100 ease-out">
+                  About Me
                 </div>
               </a>
               <a
-                href={'#contact-me'}
+                href="#contact-me"
                 className=" "
                 onClick={() => setIsShowNav(false)}
               >
-                <div className="font-semibold text-xl text-brandBlack border border-brandPurple hover:text-white w-full py-1 px-2 rounded-sm hover:bg-brandPurple bg-[#faf4ff]">
-                  Hire me
+                <div className="font-semibold text-xl text-brandBlack border border-brandPurple hover:text-white w-full py-1 px-2 rounded-sm hover:bg-brandPurple bg-[#faf4ff] transition-all duration-10 ease-out">
+                  Hire Me
                 </div>
               </a>
               <div className="flex items-center gap-2 mt-[6px] mb-2">
-                <MediaBox className={'py-1 px-2 hover:bg-brandOrange'}>
-                  <Link href={'https://www.linkedin.com/in/destiny2000/'}>
-                    <FaLinkedinIn className="text-white " />
+                <MediaBox className="py-1 px-2 hover:bg-brandOrange">
+                  <Link href="https://www.linkedin.com/in/destiny2000/">
+                    <FaLinkedinIn className="text-white" />
                   </Link>
                 </MediaBox>
-                <MediaBox className={'py-1 px-2 hover:bg-brandOrange'}>
-                  <Link href={''}>
+                <MediaBox className="py-1 px-2 hover:bg-brandOrange">
+                  <Link href="">
                     <BsYoutube className="text-white" />
                   </Link>
                 </MediaBox>
-                <MediaBox className={'py-1 px-2 hover:bg-brandOrange'}>
-                  <Link href={''}>
+                <MediaBox className="py-1 px-2 hover:bg-brandOrange">
+                  <Link href="">
                     <RiInstagramFill className="text-white" />
                   </Link>
                 </MediaBox>
               </div>
             </div>
           )}
-
-          {/* </div> */}
         </div>
       </div>
     </div>
