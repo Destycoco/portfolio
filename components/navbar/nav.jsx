@@ -103,7 +103,7 @@ const NavBar = () => {
             onClick={toggleNav}
           />
           {isShowNav && (
-            <div className="absolute top-full mt-6 shadow text-left py-3 px-4 flex flex-col gap-2 rounded-br-md rounded-bl-md right-0 w-full min-w-[240px] bg-white">
+            <div className="absolute top-full mt-6 shadow text-left py-3 px-4 flex flex-col gap-3 rounded-br-md rounded-bl-md right-0 w-full min-w-[240px] bg-white">
               <a
                 href={'#projects'}
                 className=" "
