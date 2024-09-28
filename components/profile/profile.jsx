@@ -190,28 +190,28 @@ const Profile = () => {
             <Reveal width="90%" mdWidth="80%">
               <div className="flex gap-2 flex-wrap md:w-[80%] w-[90%] m-auto mt-2">
                 <div className="text-brandBlack">{skills}</div>
-                <MediaBox className="hover:bg-brandOrange">
+                <MediaBox className="hover:bg-brandOrange py-1 px-2 md:py-2 md:px-3">
                   <FaHtml5 className="text-3xl text-white" />
                 </MediaBox>
-                <MediaBox className="hover:bg-brandOrange">
+                <MediaBox className="hover:bg-brandOrange py-1 px-2 md:py-2 md:px-3">
                   <FaCss3 className="text-3xl text-white" />
                 </MediaBox>
-                <MediaBox className="hover:bg-brandOrange">
+                <MediaBox className="hover:bg-brandOrange py-1 px-2 md:py-2 md:px-3">
                   <IoLogoJavascript className="text-3xl text-white " />
                 </MediaBox>
-                <MediaBox className="hover:bg-brandOrange">
+                <MediaBox className="hover:bg-brandOrange py-1 px-2 md:py-2 md:px-3">
                   <FaReact className="text-3xl text-white " />
                 </MediaBox>
-                <MediaBox className="hover:bg-brandOrange">
+                <MediaBox className="hover:bg-brandOrange py-1 px-2 md:py-2 md:px-3">
                   <RiNextjsFill className="text-3xl text-white" />
                 </MediaBox>
-                <MediaBox className="hover:bg-brandOrange">
+                <MediaBox className="hover:bg-brandOrange py-1 px-2 md:py-2 md:px-3">
                   <SiTailwindcss className="text-3xl text-white" />
                 </MediaBox>
-                <MediaBox className="hover:bg-brandOrange">
+                <MediaBox className="hover:bg-brandOrange py-1 px-2 md:py-2 md:px-3">
                   <IoGitBranch className="text-3xl text-white" />
                 </MediaBox>
-                <MediaBox className="hover:bg-brandOrange">
+                <MediaBox className="hover:bg-brandOrange py-1 px-2 md:py-2 md:px-3">
                   <FaGithub className="text-3xl text-white" />
                 </MediaBox>
               </div>
