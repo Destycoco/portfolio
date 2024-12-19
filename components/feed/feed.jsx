@@ -15,7 +15,7 @@ const Feed = () => {
           <H4 className="text-white font-brandFont3 tracking-wider">
             <Typed text="Hi, I'm Destiny Eze" speed={100}></Typed>
           </H4>
-          <H4 className="text-[rgb(215,144,28)] font-brandFont3 tracking-wider">
+          <H4 className="text-brandGold font-brandFont3 tracking-wider">
             <Typed
               text={"I'm a Content Writer"}
               speed={100}

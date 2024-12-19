@@ -12,6 +12,7 @@
   --brandBlue: #9de2fb;
   --brandOrange: #ff9100;
   --brandBlack: #181c14;
+  --brandGold: #d7901d;
 }
 
 @media (prefers-color-scheme: dark) {

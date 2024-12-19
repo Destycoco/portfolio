@@ -82,7 +82,7 @@ const NavBar = () => {
                 <RiInstagramFill className="text-white" />
               </Link>
             </MediaBox>
-            <MediaBox className={'py-2 px-3 bg-[#464545]'}>
+            <MediaBox className={'py-2 px-3 bg-gray-600'}>
               <Link
                 href={
                   'mailto:destibright1@gmail.com?subject=Hello Destiny&body=I%20would%20like%20to%20work with you'

@@ -15,6 +15,7 @@ module.exports = {
         brandOrange: 'var(--brandOrange)',
         brandBlue: 'var(--brandBlue)',
         brandBlack: 'var(--brandBlack)',
+        brandGold: 'var(--brandGold)',
       },
       fontFamily: {
         brandFont: ['Bree Serif', 'serif'],
