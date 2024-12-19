@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&family=Bree+Serif&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&family=Bree+Serif&family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&family=IM+Fell+Great+Primer:ital@0;1&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -8,7 +8,8 @@
   --background: #ffffff;
   --foreground: #171717;
   --brandPurple: #8000ff;
-  --darkPurple: #5900b3;
+  --brandCream: #ffecb4;
+  --brandBlue: #9de2fb;
   --brandOrange: #ff9100;
   --brandBlack: #181c14;
 }
@@ -39,7 +40,7 @@ body {
 
 .main:before {
   /* background-color: #8000ff; */
-  background: radial-gradient(circle, rgba(255, 255, 255, 0.2) 0, #f8f0ff 100%);
+  background: #fff;
   position: absolute;
   content: '';
   z-index: 2;
@@ -50,7 +51,7 @@ body {
 
 .main:after {
   content: '';
-  background-image: url('/images/grid.svg');
+  /* background-image: url('/images/grid.svg'); */
   z-index: 1;
   position: absolute;
   width: 100%;
@@ -79,7 +80,7 @@ body {
   width: 50%;
   height: 3px;
   bottom: 0;
-  background-color: var(--brandOrange);
+  background-color: #d8901e;
   border-radius: 1rem;
   margin-top: 0.5rem;
   right: 0;
@@ -91,7 +92,7 @@ body {
   height: 3px;
   bottom: 0;
   right: 0;
-  background-color: var(--brandOrange);
+  background-color: #d8901b;
   border-radius: 1rem;
   transform: scaleX(0); /* Start with scale of 0 (hidden) */
   transform-origin: right; /* Animate from the right */
@@ -121,7 +122,7 @@ body {
   @apply text-transparent bg-gradient-to-r from-brandPurple via-brandOrange to-brandPurple text-clip bg-clip-text;
 }
 .orange_reverse {
-  @apply text-transparent bg-gradient-to-r from-brandOrange via-brandPurple to-brandOrange text-clip bg-clip-text;
+  @apply text-transparent bg-gradient-to-r from-brandOrange via-brandBlue to-brandOrange text-clip bg-clip-text;
 }
 @media screen and (max-width: 600px) {
   .main:before {

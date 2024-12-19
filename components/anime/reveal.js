@@ -2,7 +2,7 @@
 import { easeIn, motion, useAnimation, useInView } from 'framer-motion';
 import { useEffect, useRef } from 'react';
 
-const Reveal = ({ children, width = 'fit', mdWidth = 'fit' }) => {
+const Reveal = ({ children, width = 'fit', mdWidth = 'fit', bg = 'black' }) => {
   const boxVariant = {
     hidden: { opacity: 0, y: 50 },
     visible: { opacity: 1, y: 0 },
@@ -36,7 +36,7 @@ const Reveal = ({ children, width = 'fit', mdWidth = 'fit' }) => {
         initial="hidden"
         animate={slideControls}
         transition={{ duration: 0.5, ease: easeIn }}
-        className="absolute top-3 left-0 right-0 bottom-3 bg-brandPurple"
+        className={`absolute top-3 left-0 right-0 bottom-3 ${bg ? `bg-${bg}` : ''}`}
       ></motion.div>
     </div>
   );

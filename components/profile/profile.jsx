@@ -94,7 +94,7 @@ const Profile = () => {
   };
   return (
     <div className="py-8 pb-12 md:w-[80%] w-[90%] m-auto" id="profile">
-      <H3 className="font-brandFont text-center mb-8 w-fit pb-1 line m-auto relative ">
+      <H3 className="font-brandFont3 text-center mb-8 w-fit pb-1 line m-auto relative ">
         Profile
       </H3>
       <div className="md:flex flex max-md:flex-col mt-16 gap-8 mb-16 ">
@@ -106,10 +106,10 @@ const Profile = () => {
           <div className="flex flex-col gap-3">
             {dataArray.map((data) => (
               <Button
-                className="bg-brandPurple md:w-[80%] w-[90%] 
+                className="bg-black md:w-[80%] w-[90%] border-2 border-black
                 m-auto text-lg active:translate-y-1 
-                hover:bg-brandOrange duration-100 
-                transition-all ease-in btn purple-gradient focus:outline-none focus:ring-1 focus:ring-brandPurple"
+                hover:bg-white duration-200  hover:text-black
+                transition-all ease-in btn focus:outline-none  focus:translate-x-2"
                 key={data.id}
                 onClick={() => handleChangeInfo(data)}
               >
@@ -219,7 +219,6 @@ const Profile = () => {
           )}
         </div>
       </div>
-      <hr className="w-[100%] m-auto mt-6 h-[1.3px] bg-brandPurple" />
     </div>
   );
 };
