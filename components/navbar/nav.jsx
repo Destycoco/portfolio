@@ -39,27 +39,33 @@ const NavBar = () => {
       {/* ${isScrolled ? 'bg-white' : 'bg-black'} */}
       <div className="flex_between ">
         <Link href={'/'}>
-          <H2 className="font-brandFont3">Destiny Eze</H2>
+          <H2 className="font-brandFont3 text-white">Destiny Eze</H2>
         </Link>
 
         <div className="flex gap-5 max-md:hidden">
           <Link href={'/#projects'}>
             <H2
-              className={'font-brandFont3 w-fit pb-1 m-auto relative nav_style'}
+              className={
+                'font-brandFont3 w-fit pb-1 m-auto relative nav_style text-white'
+              }
             >
               Projects
             </H2>
           </Link>
           <Link href={'/#profile'}>
             <H2
-              className={'font-brandFont3 w-fit pb-1 m-auto relative nav_style'}
+              className={
+                'font-brandFont3 w-fit pb-1 m-auto relative nav_style text-white'
+              }
             >
               About Me
             </H2>
           </Link>
           <Link href={'/#contact-me'}>
             <H2
-              className={'font-brandFont3 w-fit pb-1 m-auto relative nav_style'}
+              className={
+                'font-brandFont3 w-fit pb-1 m-auto relative nav_style text-white'
+              }
             >
               Hire Me
             </H2>
