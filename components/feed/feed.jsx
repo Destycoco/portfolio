@@ -22,13 +22,14 @@ const Feed = () => {
           </H4>
           <Reveal bg="brandCream">
             <P className="my-6 text-white font-brandFont3 leading-relaxed tracking-wide">
-              Hi, I’m Destiny Eze, a seasoned front-end developer with a passion
-              for crafting clean, responsive websites and web applications. My
-              expertise includes HTML, CSS, JavaScript, React, and Next.js, and
-              I love bringing designs to life with intuitive, user-friendly
-              interfaces. I focus on creating efficient, seamless experiences
-              while keeping accessibility and modern web practices in mind. It's
-              my greatest pleasure to be at your service.
+              A content writer and a web developer who can turn a boring
+              'how-to' guide into a page-turner. With a knack for storytelling
+              and a dash of humor, I have the magic to bring words to life and
+              keep readers hooked without a hint of boredom. Whether it’s
+              crafting compelling sales copies or scripting engaging content,
+              I’m your go-to expert. Combining creativity with strategy, I know
+              exactly how to create engaging content that keeps your audience
+              coming back for more.
             </P>
           </Reveal>
 

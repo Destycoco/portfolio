@@ -25,45 +25,49 @@ const Contact = {
 };
 const Experience = [
   {
-    position: 'Front-End Developer Intern, Ossoft Solution Services',
+    position: 'Content writer Intern, Ossoft Solution Services',
     year: '2023-2024',
-    desc: 'At Ossoft Solution Services, a tech company providing cutting-edge solutions to businesses, I worked as an intern, contributing to various web development projects. During my time there, I gained hands-on experience with modern web technologies and collaborated with a team to deliver solutions that improved business operations.',
+    desc: 'At Ossoft Solution Services, a tech company providing cutting-edge solutions to businesses, \
+    I Wrote and published engaging blog posts, social media updates, and website copy to enhance the brand’s \
+    online presence.',
   },
   {
-    position: 'Freelance Web Developer',
-    year: '2023-Current',
-    desc: 'I’ve also worked on several freelance projects, where I helped clients build responsive websites and web applications. Through these projects, I applied my skills in HTML, CSS, JavaScript, React, and Next.js to deliver tailored solutions, while using Git and GitHub to manage version control and project collaboration efficiently.',
+    position: 'Content Writer, BrainTutor Academy',
+    year: '2023-2024',
+    desc: 'Researched and wrote compelling copy for email campaigns, achieving a 10% higher open rate compared to previous campaigns.',
   },
 ];
 const skills =
-  'I have solid experience working with core web technologies like HTML, CSS, and JavaScript, \
-    which I use to build responsive and dynamic websites. My expertise extends to modern front-end libraries and frameworks, \
-    including React and Next.js, where I focus on creating smooth, interactive user interfaces and optimizing performance. \
-    I’m also skilled in Tailwind CSS, allowing me to rapidly design and customize layouts with clean, maintainable code. Additionally, \
-    I’m proficient in version control using Git and GitHub, which I use for efficient collaboration and managing projects in a structured way.';
+  '"As a content writer, I specialize in crafting engaging, relatable, and results-driven content. \
+  Whether it’s writing blogs, sales copies, or scripts, I have a knack for turning ideas into words \
+  that connect with audiences and leave a lasting impression. My skills go beyond just writing—I know \
+  how to adapt my tone and style to suit different brands and audiences, ensuring every piece feels \
+  authentic and on point. From storytelling that hooks readers to creating SEO-optimized content \
+  that drives traffic, I bring creativity, strategy, and a touch of humor to every project I embark on.';
 const info =
-  'Hi, I’m Destiny Eze, a passionate front-end \
-    developer specializing in crafting modern, responsive, and user-friendly \
-    web applications. With strong skills in HTML, CSS, JavaScript, React, and Next.js, \
-    I enjoy building seamless digital experiences that prioritize accessibility and \
-    performance. I’ve worked on several freelance projects and recently completed a \
-    full-stack web app utilizing Next.js and MongoDB. When I’m not coding, you’ll find me learning \
-    about the latest trends in web development and reading tech blogs and articles. \
-    Feel free to check out my projects or get in touch for collaboration opportunities!';
+  'Hey, I’m Destiny, a creative content writer with a knack for \
+  turning even the driest topics into something you actually \
+  want to read. Think of me as the friend who tells stories so good, you \
+  forget to check your phone.I write everything from sales copies to blog \
+  posts and scripts that keep people hooked. My secret? A mix of creativity, humor, \
+  and knowing how to say just the right thing to keep readers coming back for more. \
+  If you need content that gets the job done and keeps people smiling, I’m your person!';
 const intialData =
-  'Hi, I’m Destiny Eze, a passionate front-end \
-    developer specializing in crafting modern, responsive, and user-friendly \
-    web applications. With strong skills in HTML, CSS, JavaScript, React, and Next.js, \
-    I enjoy building seamless digital experiences that prioritize accessibility and \
-    performance. I’ve worked on several freelance projects and recently completed a \
-    full-stack web app utilizing Next.js and MongoDB. When I’m not coding, you’ll find me learning \
-    about the latest trends in web development and reading tech blogs and articles. \
-    Feel free to check out my projects or get in touch for collaboration opportunities!';
+  'Hey, I’m Destiny, a creative content writer with a knack for \
+  turning even the driest topics into something you actually \
+  want to read. Think of me as the friend who tells stories so good, you \
+  forget to check your phone.I write everything from sales copies to blog \
+  posts and scripts that keep people hooked. My secret? A mix of creativity, humor, \
+  and knowing how to say just the right thing to keep readers coming back for more. \
+  If you need content that gets the job done and keeps people smiling, I’m your person!';
 const education =
-  'I hold a Bachelor of Technology in Mechanical Engineering from River State University \
-    with a Second Class Upper Degree, which I completed in 2022. Alongside my engineering background\
-    , I’ve pursued my passion for web development by completing several certifications on Udemy and other online platforms, \
-    where I gained hands-on experience with modern web technologies and frameworks.';
+  'With a background in Mechanical Engineering, I’ve learned to take complex ideas and break them \
+  down into simple, relatable solutions, a skill that translates perfectly into my work as a content writer. \
+  Just like engineering is about solving problems and designing systems that work, content writing is about \
+  crafting compelling words that connect, engage, and drive results. Studying engineering taught me discipline, \
+  attention to detail, and how to think creatively under pressure—all of which I bring into my writing. \
+  Whether it’s creating content that simplifies tough concepts or building stories that resonate, my unique blend \
+  of technical and creative skills ensures every project is a success.';
 const dataArray = [
   {
     name: 'Bio',
@@ -178,45 +182,21 @@ const Profile = () => {
                     </Link>
                   </span>
                 </H1>
-                <H1>
+                {/* <H1>
                   Youtube:{' '}
                   <span className="font-normal max-sm:text-sm text-brandPurple hover:underline">
                     <Link href={Contact.youtube} target="_blank">
                       {Contact.youtube}
                     </Link>
                   </span>
-                </H1>
+                </H1> */}
               </div>
             </Reveal>
           )}
           {header === 'Skills' && (
             <Reveal width="90%" mdWidth="80%">
               <div className="flex gap-2 flex-wrap md:w-[80%] w-[90%] m-auto mt-2">
-                <div className="text-brandBlack">{skills}</div>
-                <MediaBox className="hover:bg-brandOrange py-1 px-2 md:py-2 md:px-3">
-                  <FaHtml5 className="text-3xl text-white" />
-                </MediaBox>
-                <MediaBox className="hover:bg-brandOrange py-1 px-2 md:py-2 md:px-3">
-                  <FaCss3 className="text-3xl text-white" />
-                </MediaBox>
-                <MediaBox className="hover:bg-brandOrange py-1 px-2 md:py-2 md:px-3">
-                  <IoLogoJavascript className="text-3xl text-white " />
-                </MediaBox>
-                <MediaBox className="hover:bg-brandOrange py-1 px-2 md:py-2 md:px-3">
-                  <FaReact className="text-3xl text-white " />
-                </MediaBox>
-                <MediaBox className="hover:bg-brandOrange py-1 px-2 md:py-2 md:px-3">
-                  <RiNextjsFill className="text-3xl text-white" />
-                </MediaBox>
-                <MediaBox className="hover:bg-brandOrange py-1 px-2 md:py-2 md:px-3">
-                  <SiTailwindcss className="text-3xl text-white" />
-                </MediaBox>
-                <MediaBox className="hover:bg-brandOrange py-1 px-2 md:py-2 md:px-3">
-                  <IoGitBranch className="text-3xl text-white" />
-                </MediaBox>
-                <MediaBox className="hover:bg-brandOrange py-1 px-2 md:py-2 md:px-3">
-                  <FaGithub className="text-3xl text-white" />
-                </MediaBox>
+                <P className="text-brandBlack">{skills}</P>
               </div>
             </Reveal>
           )}

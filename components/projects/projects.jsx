@@ -24,7 +24,9 @@ const Projects = () => {
             </div>
             <div className="p-4">
               <Reveal>
-                <h2 className="text-2xl font-bold mb-2">Discover Africa</h2>
+                <h2 className="text-2xl font-bold mb-2 text-black">
+                  Discover Africa
+                </h2>
                 <p className="text-gray-600 leading-snug mb-2">
                   Africa is known as the home of breathtaking wildlife and lush
                   forests, making it the perfect destination for nature lovers
@@ -53,7 +55,9 @@ const Projects = () => {
             </div>
             <div className="p-4">
               <Reveal>
-                <h2 className="text-2xl font-bold mb-2">Discover Africa</h2>
+                <h2 className="text-2xl font-bold mb-2 text-black">
+                  Discover Africa
+                </h2>
                 <p className="text-gray-600 leading-snug mb-2">
                   Africa is known as the home of breathtaking wildlife and lush
                   forests, making it the perfect destination for nature lovers
@@ -81,7 +85,9 @@ const Projects = () => {
             </div>
             <div className="p-4">
               <Reveal>
-                <h2 className="text-2xl font-bold mb-2">Discover Africa</h2>
+                <h2 className="text-2xl font-bold mb-2 text-black">
+                  Discover Africa
+                </h2>
                 <p className="text-gray-600 leading-snug mb-2">
                   Africa is known as the home of breathtaking wildlife and lush
                   forests, making it the perfect destination for nature lovers
@@ -109,7 +115,9 @@ const Projects = () => {
             </div>
             <div className="p-4">
               <Reveal>
-                <h2 className="text-2xl font-bold mb-2">Discover Africa</h2>
+                <h2 className="text-2xl font-bold mb-2 text-black">
+                  Discover Africa
+                </h2>
                 <p className="text-gray-600 leading-snug mb-2">
                   Africa is known as the home of breathtaking wildlife and lush
                   forests, making it the perfect destination for nature lovers
