@@ -45,81 +45,72 @@ const Formsection = () => {
               <div className="md:w-[48%] w-full">
                 <label
                   htmlFor="firstname"
-                  className="font-brandFont max-sm:text-white text-brandBlack"
+                  className="font-brandFont3 text-white"
                 >
                   First Name
                 </label>
                 <Field
                   type="text"
                   name="firstName"
-                  className="w-full h-[2.8rem] rounded-lg focus:outline-none focus:ring-1 max-sm:focus:ring-2 max-sm:focus:ring-brandOrange focus:ring-brandPurple px-3 text-brandBlack bg-[#faf4ff]"
+                  className="w-full h-[2.8rem] rounded-lg focus:outline-none focus:ring-1 max-sm:focus:ring-2 focus:ring-brandGold px-3 text-brandBlack bg-white"
                 ></Field>
                 <ErrorMessage
                   name="firstName"
                   component="div"
-                  className="text-sm text-red-600 max-sm:text-brandOrange"
+                  className="text-sm text-brandGold max-sm:text-brandOrange"
                 />
               </div>
               <div className="md:w-[48%] w-full ">
                 <label
                   htmlFor="lastName"
-                  className="font-brandFont max-sm:text-white text-brandBlack"
+                  className="font-brandFont3 text-white"
                 >
                   Last Name
                 </label>
                 <Field
                   type="text"
                   name="lastName"
-                  className="w-full h-[2.8rem] rounded-lg focus:outline-none max-sm:focus:ring-brandOrange focus:ring-1 max-sm:focus:ring-2 focus:ring-brandPurple px-3 text-brandBlack bg-[#faf4ff]"
+                  className="w-full h-[2.8rem] rounded-lg focus:outline-none focus:ring-1 max-sm:focus:ring-2 focus:ring-brandGold px-3 text-brandBlack bg-white"
                 ></Field>
                 <ErrorMessage
                   name="lastName"
                   component="div"
-                  className="text-sm text-red-600 max-sm:text-brandOrange"
+                  className="text-sm text-brandGold max-sm:text-brandOrange"
                 />
               </div>
               <div className="md:w-[48%] w-full ">
-                <label
-                  htmlFor="email"
-                  className="font-brandFont max-sm:text-white text-brandBlack"
-                >
+                <label htmlFor="email" className="font-brandFont3 text-white">
                   Email
                 </label>
                 <Field
                   type="text"
                   name="email"
-                  className="w-full h-[2.8rem] rounded-lg focus:outline-none focus:ring-1 max-sm:focus:ring-2 max-sm:focus:ring-brandOrange focus:ring-brandPurple px-3 text-brandBlack bg-[#faf4ff]"
+                  className="w-full h-[2.8rem] rounded-lg focus:outline-none focus:ring-1 max-sm:focus:ring-2 focus:ring-brandGold px-3 text-brandBlack bg-white"
                 ></Field>
                 <ErrorMessage
                   name="email"
                   component="div"
-                  className="text-sm text-red-600 max-sm:text-brandOrange"
+                  className="text-sm text-brandGold "
                 />
               </div>
               <div className="md:w-[48%] w-full">
-                <label
-                  htmlFor="phone"
-                  className="font-brandFont max-sm:text-white text-brandBlack"
-                >
+                <label htmlFor="phone" className="font-brandFont3 text-white ">
                   Phone Number
                 </label>
                 <Field
                   type="text"
                   name="phone"
-                  className="w-full h-[2.8rem] rounded-lg focus:outline-none focus:ring-1 max-sm:focus:ring-2 max-sm:focus:ring-brandOrange focus:ring-brandPurple px-3 text-brandBlack bg-[#faf4ff]"
+                  className="w-full h-[2.8rem] rounded-lg focus:outline-none focus:ring-1 max-sm:focus:ring-2 focus:ring-brandGold  px-3 text-brandBlack bg-white"
                 ></Field>
                 <ErrorMessage
                   name="phone"
                   component="div"
-                  className="text-sm text-red-600 max-sm:text-brandOrange"
+                  className="text-sm text-brandGold"
                 />
               </div>
               <div className="w-full">
                 {' '}
-                <label
-                  htmlFor="body"
-                  className="font-brandFont max-sm:text-white text-brandBlack"
-                >
+                <label htmlFor="body" className="font-brandFont3 text-white">
                   Type your message here
                 </label>
                 <textarea
@@ -127,10 +118,10 @@ const Formsection = () => {
                   onChange={handleChange}
                   onBlur={handleBlur}
                   value={values.body}
-                  className=" w-full h-[200px] py-2 px-3 rounded-lg focus:outline-none focus:ring-1 max-sm:focus:ring-2 max-sm:focus:ring-brandOrange focus:ring-brandPurple text-brandBlack bg-[#faf4ff]"
+                  className=" w-full h-[200px] py-2 px-3 rounded-lg focus:outline-none focus:ring-1 max-sm:focus:ring-2  focus:ring-brandGold text-brandBlack bg-white"
                 />
                 {errors.body && (
-                  <div className="text-sm text-red-600 max-sm:text-brandOrange">
+                  <div className="text-sm text-brandGold max-sm:text-brandOrange">
                     {errors.body}
                   </div>
                 )}
@@ -139,7 +130,7 @@ const Formsection = () => {
             {/* disabled={isSubmitting} */}
             <button
               type="submit"
-              className="rounded-lg bg-brandPurple max-sm:bg-brandOrange font-semibold px-3 py-2 w-[120px] text-white mt-2"
+              className="rounded-lg flex justify-self-end text-center justify-center items-center bg-brandGold font-semibold px-3 py-2 w-[120px] text-white mt-2"
             >
               Submit
             </button>

@@ -105,7 +105,7 @@ const NavBar = () => {
             {/* MdOutlineMenu */}
             <MdOutlineMenu
               size={40}
-              className={`cursor-pointer absolute text-brandPurple transition-all duration-500 ease-in-out ${
+              className={`cursor-pointer absolute text-brandGold transition-all duration-500 ease-in-out ${
                 isShowNav
                   ? 'opacity-0 transform rotate-90 scale-0'
                   : 'opacity-100 transform rotate-0 scale-100'
@@ -116,7 +116,7 @@ const NavBar = () => {
             {/* MdOutlineClose */}
             <MdOutlineClose
               size={40}
-              className={`cursor-pointer absolute text-brandPurple transition-all duration-500 ease-in-out ${
+              className={`cursor-pointer absolute text-brandGold transition-all duration-500 ease-in-out ${
                 isShowNav
                   ? 'opacity-100 transform rotate-0 scale-100'
                   : 'opacity-0 transform rotate-90 scale-0'
@@ -133,7 +133,7 @@ const NavBar = () => {
                 className=" "
                 onClick={() => setIsShowNav(false)}
               >
-                <div className="font-semibold text-xl text-brandBlack border border-brandPurple hover:text-white w-full py-1 px-2 rounded-sm hover:bg-brandPurple bg-[#faf4ff] transition-all duration-100 ease-out">
+                <div className="font-semibold text-xl text-brandBlack border border-brandGold hover:text-white w-full py-1 px-2 rounded-sm hover:bg-brandGold bg-white transition-all duration-100 ease-out">
                   Projects
                 </div>
               </a>
@@ -142,7 +142,7 @@ const NavBar = () => {
                 className=" "
                 onClick={() => setIsShowNav(false)}
               >
-                <div className="font-semibold text-xl text-brandBlack border border-brandPurple hover:text-white w-full py-1 px-2 rounded-sm hover:bg-brandPurple bg-[#faf4ff] transition-all duration-100 ease-out">
+                <div className="font-semibold text-xl text-brandBlack border border-brandGold hover:text-white w-full py-1 px-2 rounded-sm hover:bg-brandGold bg-white transition-all duration-100 ease-out">
                   About Me
                 </div>
               </a>
@@ -151,27 +151,41 @@ const NavBar = () => {
                 className=" "
                 onClick={() => setIsShowNav(false)}
               >
-                <div className="font-semibold text-xl text-brandBlack border border-brandPurple hover:text-white w-full py-1 px-2 rounded-sm hover:bg-brandPurple bg-[#faf4ff] transition-all duration-10 ease-out">
+                <div className="font-semibold text-xl text-brandBlack border border-brandGold hover:text-white w-full py-1 px-2 rounded-sm hover:bg-brandGold bg-white transition-all duration-10 ease-out">
                   Hire Me
                 </div>
               </a>
               <div className="flex items-center gap-2 mt-[6px] mb-2">
-                <MediaBox className="py-1 px-2 hover:bg-brandOrange">
+                <MediaBox className="py-1 px-2 bg-blue-700 hover:bg-blue-800">
                   <Link href="https://www.linkedin.com/in/destiny2000/">
                     <FaLinkedinIn className="text-white" />
                   </Link>
                 </MediaBox>
-                <MediaBox className="py-1 px-2 hover:bg-brandOrange">
+                <MediaBox className="py-1 px-2 bg-red-600 hover:bg-red-700">
                   <Link href="">
                     <BsYoutube className="text-white" />
                   </Link>
                 </MediaBox>
-                <MediaBox className="py-1 px-2 hover:bg-brandOrange">
+                <MediaBox className="py-1 px-2 bg-pink-500 hover:bg-pink-600">
                   <Link href="">
                     <RiInstagramFill className="text-white" />
                   </Link>
                 </MediaBox>
+                <MediaBox className={'py-1 px-2 bg-gray-600'}>
+                  <Link
+                    href={
+                      'mailto:destibright1@gmail.com?subject=Hello Destiny&body=I%20would%20like%20to%20work with you'
+                    }
+                  >
+                    <MdEmail className="text-white" />
+                  </Link>
+                </MediaBox>
               </div>
+              <Button text="black" className="bg-black text-white">
+                <Link href={'/DESTINY_RESUME.pdf'} download={'DESTINY_RESUME'}>
+                  Download Resume
+                </Link>
+              </Button>
             </div>
           )}
         </div>

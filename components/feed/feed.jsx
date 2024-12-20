@@ -4,10 +4,8 @@ import P from '../fonts/paragraph';
 import Button from '../accessories/button';
 import Reveal from '../anime/reveal';
 import Typed from '../typing/typing';
-import { useRouter } from 'next/navigation';
 import Link from 'next/link';
 const Feed = () => {
-  const router = useRouter();
   return (
     <div className="w-full pt-12 pb-2  bg-black">
       <div className="md:flex justify-center items-center gap-5 md:w-[80%] w-[90%]  m-auto">

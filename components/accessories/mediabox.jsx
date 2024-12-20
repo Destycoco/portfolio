@@ -1,8 +1,6 @@
-const MediaBox = ({ children, className, }) => {
+const MediaBox = ({ children, className }) => {
   return (
-    <div
-      className={`shadow-lg rounded-md w-fit cursor-pointer bg-brandPurple ${className}`}
-    >
+    <div className={`shadow-lg rounded-md w-fit cursor-pointer ${className}`}>
       {children}
     </div>
   );

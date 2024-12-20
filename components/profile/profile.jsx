@@ -93,7 +93,10 @@ const Profile = () => {
     setHeader(value.name);
   };
   return (
-    <div className="py-8 pb-12 md:w-[80%] w-[90%] m-auto" id="profile">
+    <div
+      className="pt-8 md:pb-12 pb-2 md:w-[80%] w-[100%] max-md:px-1 m-auto "
+      id="profile"
+    >
       <H3 className="font-brandFont3 text-center mb-8 w-fit pb-1 line m-auto relative ">
         Profile
       </H3>
