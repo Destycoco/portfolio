@@ -7,11 +7,7 @@ export const H1 = ({ children, className = '' }) => {
 };
 
 export const H2 = ({ children, className = '' }) => {
-  return (
-    <div className={`text-2xl text-brandBlack font-bold ${className}`}>
-      {children}
-    </div>
-  );
+  return <div className={`text-2xl font-bold ${className}`}>{children}</div>;
 };
 export const H3 = ({ children, className = '' }) => {
   return (

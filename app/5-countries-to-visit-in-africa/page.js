@@ -150,10 +150,10 @@ const Africa = () => {
         lounging by the sea.
       </P>
 
-      <H2 className="mt-8 mb-4">
+      <h2 className="mt-8 mb-4 text-2xl text-brandBlack font-bold">
         Here are some of the interesting facts about Mauritius that you should
         know
-      </H2>
+      </h2>
       <ul className="list-disc pl-8 space-y-6">
         <li className="text-brandBlack">
           <H1>No Official Army:</H1>
@@ -430,7 +430,7 @@ const Africa = () => {
         </div>
       </div>
       <div className="mt-8">
-        <H2>Conclusion</H2>
+        <h2 className="text-2xl text-brandBlack font-bold">Conclusion</h2>
         <P>
           In conclusion, Africa offers a plethora of vibrant and culturally rich
           destinations to explore during the festive season. From the majestic
