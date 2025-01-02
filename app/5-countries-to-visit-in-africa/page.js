@@ -13,7 +13,7 @@ const Africa = () => {
         <p className="leading-tight ml-4 font-semibold text-black">
           By Destiny Eze | 18th December, 2024
         </p>
-        <p className="font-semibold w-[100px] ml-44 text-black">10 mins Read</p>
+        <p className="font-semibold w-[100px] ml-44 text-black">15 mins Read</p>
       </div>
       <div className="w-full h-[500px] max-md:h-[200px]">
         <Image
@@ -155,7 +155,7 @@ const Africa = () => {
         know
       </h2>
       <ul className="list-disc pl-8 space-y-6">
-        <li className="text-brandBlack">
+        <li className="text-brandBlack text-lg max-sm:text-base ">
           <H1>No Official Army:</H1>
           The country is one of the few in the world with no standing army,
           relying on police forces for security. And this has been the case
@@ -165,7 +165,7 @@ const Africa = () => {
           ranks it as one of the safest places to visit in Africa, making it a
           top choice for travelers, honeymooners and families.
         </li>
-        <li className="text-brandBlack">
+        <li className="text-brandBlack text-lg max-sm:text-base ">
           <H1>Sugarcane Legacy:</H1>
           Do you know that sugar cane is practically part of Mauritius’s DNA?
           It’s been growing on the island for centuries, and at one point, it
@@ -175,7 +175,7 @@ const Africa = () => {
           life. Knowing this fact, Mauritius would be a must visit for sugarcane
           lovers.
         </li>
-        <li className="text-brandBlack">
+        <li className="text-brandBlack text-lg max-sm:text-base ">
           {' '}
           <H1>Multilingual Nation:</H1>
           Mauritius is also known to be a country with different people from
@@ -222,7 +222,7 @@ const Africa = () => {
           and here are some of them.
         </H1>
         <ul className="list-disc pl-8 space-y-6 my-6">
-          <li className="text-brandBlack">
+          <li className="text-brandBlack text-lg max-sm:text-base ">
             <H1>The Safari of a Lifetime</H1>
             If you’ve ever dreamed of seeing wild animals up close, Kenya is the
             place to be. Picture this: the sun rising over the savannah,
@@ -232,12 +232,12 @@ const Africa = () => {
             <br />
             <br />
             The Maasai Mara is home to the world-famous Great Migration, where
-            you where you can encounter numerous wild creatures. It’s like
-            watching the Discovery Channel, but you get to exeprience a lot
-            because you’re right there at the secene! PS: Don’t forget your
-            camera; this should be placed at the top of your travel list.
+            you can encounter numerous wild creatures. It’s like watching the
+            Discovery Channel, but you get to exeprience a lot because you’re
+            right there at the secene! PS: Don’t forget your camera; this should
+            be placed at the top of your travel list.
           </li>
-          <li className="text-brandBlack">
+          <li className="text-brandBlack text-lg max-sm:text-base ">
             <H1>Mount Kenya: A Hiker’s Paradise</H1>
             If you are always dreamt of hiking, then this is the perfect place
             for you. Mount Kenya is known to be the Africa’s second-highest
@@ -245,7 +245,7 @@ const Africa = () => {
             a pro, there are routes for all experience levels, trust me it’s an
             experience that you wouldn’t forget in a hurry.
           </li>
-          <li className="text-brandBlack">
+          <li className="text-brandBlack text-lg max-sm:text-base ">
             <H1>Lake Nakuru: A Birdwatcher’s Dream</H1>
             Lake Nakuru is a beautiful lake located in Nakuru County, within the
             Rift Valley region of Kenya. Imagine a shimmering lake filled with
@@ -382,19 +382,19 @@ const Africa = () => {
             include:
           </H1>
           <ul className="list-disc pl-6 space-y-6 my-6">
-            <li className="text-brandBlack">
+            <li className="text-brandBlack text-lg max-sm:text-base ">
               <H1>Olumo Rock: </H1>A historic rock formation in Abeokuta, Olumo
               Rock is a great spot to take in panoramic views of the city. It’s
               a peaceful place to hike and enjoy nature, and you’ll even find
               some ancient caves and shrines along the way.
             </li>
-            <li className="text-brandBlack">
+            <li className="text-brandBlack text-lg max-sm:text-base ">
               <H1>Yankari National Park: </H1>
               If you're into safaris, this park is a must-see. It’s home to
               elephants, baboons, and other wildlife. The park also has natural
               hot springs, perfect for a relaxing dip after a day of adventure.
             </li>
-            <li className="text-brandBlack">
+            <li className="text-brandBlack text-lg max-sm:text-base ">
               <H1>Beaches:</H1>
               Nigeria also has some pretty amazing beaches. Head to Lagos for
               some memorable experience at elegushi Beach or visit the serene

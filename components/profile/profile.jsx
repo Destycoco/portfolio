@@ -25,14 +25,14 @@ const Contact = {
 };
 const Experience = [
   {
-    position: 'Content writer Intern, Ossoft Solution Services',
+    position: 'Content writer, Ossoft Solution Services',
     year: '2023-2024',
     desc: 'At Ossoft Solution Services, a tech company providing cutting-edge solutions to businesses, \
     I Wrote and published engaging blog posts, social media updates, and website copy to enhance the brand’s \
     online presence.',
   },
   {
-    position: 'Content Writer, BrainTutor Academy',
+    position: 'Content Writer Intern, BrainTutor Academy',
     year: '2023-2024',
     desc: 'Researched and wrote compelling copy for email campaigns, achieving a 10% higher open rate compared to previous campaigns.',
   },
