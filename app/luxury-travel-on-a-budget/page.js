@@ -221,7 +221,7 @@ const Africa = () => {
         </ul>
         <P className="mt-6 px-3">
           Travel agents like Travelbeta prove that luxury travel doesn’t have to
-          ccause you to break the bank. From exclusive perks to stress-free
+          cause you to break the bank. From exclusive perks to stress-free
           planning, they offer invaluable services that make your dream trip a
           reality. So, the next time you plan a vacation trip, consider
           partnering with a trusted travel agent to unlock the world of
