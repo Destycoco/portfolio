@@ -48,25 +48,27 @@ const Projects = () => {
           <div className="h-[480px] bg-white rounded-lg shadow-lg overflow-hidden ">
             <div className="h-[55%] max-md:h-[47%] w-full">
               <img
-                src="/images/africa-tour.svg"
+                src="/images/luxury-travel.svg"
                 alt="Sample Image 1"
                 className="w-full h-full object-cover"
               />
             </div>
-            <div className="p-4">
+            <div className="p-2 px-4">
               <Reveal>
                 <h2 className="text-2xl font-bold mb-2 text-black">
-                  Discover Africa
+                  Luxury Travel On A Budget
                 </h2>
-                <p className="text-gray-600 leading-snug mb-2">
-                  Africa is known as the home of breathtaking wildlife and lush
-                  forests, making it the perfect destination for nature lovers
-                  and adventure seekers. This Christmas, let's explore five
-                  African countries that offer unforgettable experiences and
-                  breathtaking natural beauty.
+                <p className="text-gray-600 leading-snug ">
+                  Luxury travel doesn't have to break the bank! Picture yourself
+                  staying at stunning resorts, indulging in delectable meals,
+                  and exploring incredible destinations without overspending.
+                  Believe it or not, with the right planning and insider tips,
+                  you can experience all of this on a budget. Are you ready to
+                  learn how? Keep reading to uncover the secrets to affordable
+                  luxury travel!
                 </p>
                 <Link
-                  href={'../../5-countries-to-visit-in-africa'}
+                  href={'../../luxury-travel-on-a-budget'}
                   className="text-brandGold hover:text-brandOrange flex justify-self-end"
                 >
                   View Post
@@ -75,7 +77,7 @@ const Projects = () => {
             </div>
           </div>
           {/* Child Div 3 */}
-          <div className="h-[480px] bg-white rounded-lg shadow-lg overflow-hidden ">
+          {/* <div className="h-[480px] bg-white rounded-lg shadow-lg overflow-hidden ">
             <div className="h-[55%] max-md:h-[47%] w-full">
               <img
                 src="/images/africa-tour.svg"
@@ -103,9 +105,9 @@ const Projects = () => {
                 </Link>
               </Reveal>
             </div>
-          </div>
+          </div> */}
           {/* Child Div 4 */}
-          <div className="h-[480px] bg-white rounded-lg shadow-lg overflow-hidden ">
+          {/* <div className="h-[480px] bg-white rounded-lg shadow-lg overflow-hidden ">
             <div className="h-[55%] max-md:h-[47%] w-full">
               <img
                 src="/images/africa-tour.svg"
@@ -133,7 +135,7 @@ const Projects = () => {
                 </Link>
               </Reveal>
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
     </div>
