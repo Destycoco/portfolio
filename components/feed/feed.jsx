@@ -5,6 +5,7 @@ import Button from '../accessories/button';
 import Reveal from '../anime/reveal';
 import Typed from '../typing/typing';
 import Link from 'next/link';
+import Typewriter from '../typewriter/typewriter';
 const Feed = () => {
   return (
     <div className="w-full pt-12 pb-2  bg-black">
@@ -14,22 +15,24 @@ const Feed = () => {
             <Typed text="Hi, I'm Destiny Eze" speed={100}></Typed>
           </H4>
           <H4 className="text-brandGold font-brandFont3 tracking-wider">
-            <Typed
-              text={"I'm a Content Writer"}
-              speed={100}
+            <Typewriter
+              writeups={[
+                'A Graphic Designer',
+                'And also a Web Developer.',
+                'A Creative Content Writer',
+              ]}
+              // speed={100}
               delay={2500}
-            ></Typed>
+            ></Typewriter>
           </H4>
           <Reveal bg="brandCream">
             <P className="my-6 text-white font-brandFont3 leading-relaxed tracking-wide">
-              A content writer and a web developer who can turn a boring
-              'how-to' guide into a page-turner. With a knack for storytelling
-              and a dash of humor, I have the magic to bring words to life and
-              keep readers hooked without a hint of boredom. Whether it’s
-              crafting compelling sales copies or scripting engaging content,
-              I’m your go-to expert. Combining creativity with strategy, I know
-              exactly how to create engaging content that keeps your audience
-              coming back for more.
+              I am a versatile content writer, graphic designer, and web
+              developer who brings creative ideas to life. With compelling
+              words, captivating designs, and dynamic websites, I showcase your
+              vision to a global audience. Whether it’s engaging content, sales
+              copy, or eye-catching visuals, I combine creativity and strategy
+              to keep your audience hooked and coming back for more.
             </P>
           </Reveal>
 

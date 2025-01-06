@@ -40,23 +40,24 @@ const Africa = () => {
           <H3>1. Timing and Flexibility Are Key</H3>
           <P>
             Imagine going on a vacation to your dream destination for a fraction
-            of the cost! One of the easiest ways to save big on luxury travel is
-            to be smart about when you book and remain flexible with your travel
-            dates. Off-season travel is your golden ticket. <br />
+            of the cost! sounds enticing right? One of the easiest ways to save
+            big on luxury travel is to be smart about when you book and remain
+            flexible with your travel dates. having this in mind, Off-season
+            travel is your golden ticket. <br />
             <br />
-            Picture yourself strolling through the charming streets of Europe in
-            late autumn or basking in the sun at tropical destinations during
-            their shoulder seasons (right before or after peak season) - all at
-            significantly lower prices. Plus, fewer crowds mean a more exclusive
-            experience. <br />
+            For a moment try to picture yourself strolling through the charming
+            streets of Europe in late autumn or basking in the sun at tropical
+            destinations during their shoulder seasons (right before or after
+            peak season) - all at significantly lower prices. Plus, fewer crowds
+            mean a more exclusive experience. <br />
             By being flexible with your departure and return dates, you can
             secure amazing deals on flights and accommodation.
             <br />
             <br />
-            Keep an eye on price trends using tools like Google Flights or
-            checking websites like Travelbeta, and set alerts for deals.
-            Sometimes, simply shifting your trip by a day or two can make a
-            massive difference in cost.
+            One thing you should be intentional about is keeping an eye on price
+            trends using tools like Google Flights or checking websites like
+            Travelbeta, and set alerts for deals. Sometimes, simply shifting
+            your trip by a day or two can make a massive difference in cost.
             <br />
             <br />
           </P>

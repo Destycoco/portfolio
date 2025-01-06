@@ -16,7 +16,7 @@ export default function RootLayout({ children }) {
         </div>
         <main className="app relative ">
           <NavBar />
-          <div className="mt-16">{children}</div>
+          <div className="mt-16 ">{children}</div>
         </main>
       </body>
     </html>

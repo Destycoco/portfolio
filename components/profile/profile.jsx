@@ -36,38 +36,50 @@ const Experience = [
     year: '2023-2024',
     desc: 'Researched and wrote compelling copy for email campaigns, achieving a 10% higher open rate compared to previous campaigns.',
   },
+  {
+    position: 'Graphic Designer, Freelance',
+    year: '2023-2024',
+    desc: "As a freelance graphic designer, I've worked on different projects, including logos, \
+    branding, marketing materials, and website visuals. I’ve helped clients establish strong \
+    identities and create engaging designs that align with their goals. My experience has sharpened \
+    my attention to detail and ability to deliver high-quality work within deadlines.",
+  },
 ];
 const skills =
-  '"As a content writer, I specialize in crafting engaging, relatable, and results-driven content. \
-  Whether it’s writing blogs, sales copies, or scripts, I have a knack for turning ideas into words \
-  that connect with audiences and leave a lasting impression. My skills go beyond just writing—I know \
-  how to adapt my tone and style to suit different brands and audiences, ensuring every piece feels \
-  authentic and on point. From storytelling that hooks readers to creating SEO-optimized content \
-  that drives traffic, I bring creativity, strategy, and a touch of humor to every project I embark on.';
+  'As a content writer, I specialize in creating engaging, relatable, and results-driven content, \
+  including blogs, sales copies, and scripts. I have a keen ability to adapt my tone and style to \
+  suit different brands and audiences, ensuring every piece feels authentic and on point. \
+  My expertise extends beyond writing, as I focus on crafting SEO-optimized content that drives traffic \
+  and resonates with readers. Additionally, I have hands-on experience with graphic design tools like Canva, \
+  CorelDRAW, and Adobe Photoshop, allowing me to create visually compelling content that complements my writing. \
+  With proficiency in SEO tools like Google Analytics, I track performance and refine content to maximize its reach \
+  and engagement.';
 const info =
-  'Hey, I’m Destiny, a creative content writer with a knack for \
-  turning even the driest topics into something you actually \
-  want to read. Think of me as the friend who tells stories so good, you \
-  forget to check your phone.I write everything from sales copies to blog \
-  posts and scripts that keep people hooked. My secret? A mix of creativity, humor, \
-  and knowing how to say just the right thing to keep readers coming back for more. \
-  If you need content that gets the job done and keeps people smiling, I’m your person!';
-const intialData =
-  'Hey, I’m Destiny, a creative content writer with a knack for \
-  turning even the driest topics into something you actually \
-  want to read. Think of me as the friend who tells stories so good, you \
-  forget to check your phone.I write everything from sales copies to blog \
-  posts and scripts that keep people hooked. My secret? A mix of creativity, humor, \
-  and knowing how to say just the right thing to keep readers coming back for more. \
-  If you need content that gets the job done and keeps people smiling, I’m your person!';
+  "Hello there! I'm Destiny - a dynamic creative content writer,\
+ skilled graphic designer, and savvy web developer. I possess a \
+ unique talent for seamlessly blending words, visuals, and functionality\
+  to create impactful results. My expertise lies in crafting compelling sales copies, \
+  engaging blog posts, and captivating scripts that not only hook readers from the start \
+  but also boost SEO to drive organic traffic. I also specialize in designing visually \
+  appealing graphics that enhance the message and improve audience engagement, ensuring a \
+  cohesive and impactful digital presence. When it comes to web development, I ensure \
+  that everything comes together flawlessly on a dynamic platform, guaranteeing a \
+  smooth user experience. By combining storytelling, design, and technical strategies, \
+  I create content that not only captivates but also delivers a polished and professional end product. \
+  If you're in need of someone who can infuse creativity, strategy, and innovation into your projects, \
+  look no further - I'm your go-to person!";
+
 const education =
-  'With a background in Mechanical Engineering, I’ve learned to take complex ideas and break them \
-  down into simple, relatable solutions, a skill that translates perfectly into my work as a content writer. \
-  Just like engineering is about solving problems and designing systems that work, content writing is about \
-  crafting compelling words that connect, engage, and drive results. Studying engineering taught me discipline, \
-  attention to detail, and how to think creatively under pressure—all of which I bring into my writing. \
-  Whether it’s creating content that simplifies tough concepts or building stories that resonate, my unique blend \
-  of technical and creative skills ensures every project is a success.';
+  'With a background in Mechanical Engineering, I’ve mastered the art of breaking down complex \
+  ideas into simple, relatable solutions - a skill that translates seamlessly into my work as both \
+  a content writer and graphic designer. Just like engineering is about solving problems and designing \
+  systems that work, content writing is about crafting words that connect, engage, and drive results, \
+  while graphic design brings those ideas to life visually. Studying engineering taught me discipline, \
+  attention to detail, and how to think creatively under pressure, all of which I bring into my creative work. \
+  I’ve also leveraged my engineering mindset to enhance my design skills, ensuring every visual is not only\
+  striking but also thoughtfully structured to communicate effectively. Whether it’s creating content that \
+  simplifies tough concepts or designing visuals that captivate, my unique blend of technical and creative \
+  skills ensures every project is a success.';
 const dataArray = [
   {
     name: 'Bio',
