@@ -99,10 +99,7 @@ const NavBar = () => {
             </MediaBox>
           </div>
           <Button text="black" className="bg-white text-black">
-            <Link
-              href={'/Destiny_Eze_Content_Writing_CV.pdf'}
-              download={'Destiny_Eze_Content_Writing_CV'}
-            >
+            <Link href={'/Destiny_Eze_CV.pdf'} download={'Destiny_Eze_CV'}>
               Download Resume
             </Link>
           </Button>
@@ -191,10 +188,7 @@ const NavBar = () => {
                 </MediaBox>
               </div>
               <Button text="black" className="bg-black text-white">
-                <Link
-                  href={'/Destiny_Eze_Content_Writing_CV.pdf'}
-                  download={'Destiny_Eze_Content_Writing_CV'}
-                >
+                <Link href={'/Destiny_Eze_CV.pdf'} download={'Destiny_Eze_CV'}>
                   Download Resume
                 </Link>
               </Button>
